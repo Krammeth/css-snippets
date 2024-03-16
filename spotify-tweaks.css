@@ -1,0 +1,73 @@
+/* Spotify Activity */
+[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) .contentImagesUserPopoutV2__04250 {
+  margin-left: 22px;
+}
+[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) .contentImagesUserPopoutV2__04250 > div:first-child::before,
+[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) .contentImagesUserPopoutV2__04250 > div:nth-child(2)::before,
+[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) .contentImagesUserPopoutV2__04250 > div:nth-child(3)::before,
+#vc-spotify-titles > div:first-child::before,
+#vc-spotify-titles > div:nth-child(2)::before,
+#vc-spotify-titles > div:nth-child(3)::before {
+  padding: 7px;
+  margin-left: -17px;
+  margin-top: 2px;
+  position: absolute;
+}
+[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) .contentImagesUserPopoutV2__04250 > div:first-child::before {
+  content: "🎵";
+  margin-top: -6px;
+  left: 77.5px;
+}
+[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) .contentImagesUserPopoutV2__04250 > div:nth-child(2)::before {
+  content: "🎤";
+  margin-top: -6px;
+  left: 77.5px;
+}
+[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) .contentImagesUserPopoutV2__04250 > div:nth-child(3)::before {
+  content: "💿";
+  margin-top: -6px;
+  left: 77.5px;
+}
+[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) .contentImagesUserPopoutV2__04250 {
+  margin-top: 3px; /* fix details being horizontally misaligned */
+}
+[class^="disabledButtonWrapper__"] { /* Hide Buttons */
+  display: none;
+}
+[class^="detailsWrap__"] { /* Fix Author Overflow */
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+}
+
+/* Spotify Controls */
+#vc-spotify-titles { 
+  margin-left: 15px; 
+}
+#vc-spotify-titles > div:first-child::before {
+  content: "🎵";
+  margin-top: -6px;
+  left: 65.5px;
+}
+#vc-spotify-titles > div:nth-child(2)::before {
+  content: "🎤";
+  margin-top: -6px;
+  left: 65.5px;
+}
+#vc-spotify-titles > div:nth-child(3)::before {
+  content: "💿";
+  margin-top: -6px;
+  left: 65.5px;
+}
+#vc-spotify-album-image {
+  border-radius: 10px;
+  max-width: 43.2px; /* prevent larger covers from breaking stuff */
+}
+#vc-spotify-album-expanded-wrapper #vc-spotify-album-image {
+  max-width: initial;
+}
+[class*=vc-spotify-shuffle-on] > svg, 
+[class*=vc-spotify-repeat-context] > svg,
+[class*=vc-spotify-repeat-track] > svg {
+  fill: var(--main-color)
+}
