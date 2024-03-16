@@ -62,11 +62,9 @@
 #vc-spotify-album-image {
   border-radius: 10px;
   max-width: 43.2px; /* prevent larger covers from breaking stuff */
-  height: 43.2px;
 }
 #vc-spotify-album-expanded-wrapper #vc-spotify-album-image {
   max-width: initial;
-  height: initial;
 }
 [class*=vc-spotify-shuffle-on] > svg, 
 [class*=vc-spotify-repeat-context] > svg,
