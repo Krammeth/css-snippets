@@ -64,7 +64,7 @@
   max-width: 43.2px; /* prevent larger covers from breaking stuff */
 }
 #vc-spotify-album-expanded-wrapper #vc-spotify-album-image {
-  max-width: 224px;
+  width: 224px;
 }
 [class*=vc-spotify-shuffle-on] > svg, 
 [class*=vc-spotify-repeat-context] > svg,
