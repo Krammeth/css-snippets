@@ -1,0 +1,47 @@
+/* Minified member list*/
+:root {
+  --hidden-user-width: 65px;
+  --user-width: 240px
+}
+.container_b2ce9c,
+[class^="membersWrap__"] {
+  transition-duration: 0.3s;
+  justify-content: unset;
+  min-width: unset;
+  width: var(--hidden-user-width);
+  position: absolute;
+  right: 0;
+}
+[class^="membersGroup__"] {
+  transition-duration: 0.3s;
+  height: 0px;
+  padding-top: 0px
+}
+.container_b2ce9c:hover [class^="membersGroup__"],
+[class^="membersWrap__"]:hover [class^="membersGroup__"] {
+  height: 40px;
+  padding-top: 24px;
+}
+.container_b2ce9c:hover [class^="membersWrap__"],
+.container_b2ce9c:hover,
+[class^="membersWrap__"]:hover {
+  width: var(--user-width);
+}
+[class^="chatContent__"] {
+  max-width: 94.5%;
+}
+
+/* Membercount Tweaks */
+.vc-membercount-widget { /* removes counters */
+  display: flex;
+}
+.vc-membercount-online, /* online */
+.vc-membercount-total { /* total */
+  display: none;
+}
+[class^="membersWrap__"]:hover .vc-membercount-online, 
+.container_b2ce9c:hover .vc-membercount-online,
+[class^="membersWrap__"]:hover .vc-membercount-total,
+.container_b2ce9c:hover .vc-membercount-total {
+  display: initial;
+}
