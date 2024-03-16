@@ -66,6 +66,7 @@
 }
 #vc-spotify-album-expanded-wrapper #vc-spotify-album-image {
   max-width: initial;
+  height: initial;
 }
 [class*=vc-spotify-shuffle-on] > svg, 
 [class*=vc-spotify-repeat-context] > svg,
