@@ -1,20 +1,12 @@
-/* No Voice Users */
-[class^=bar__]:has([class^=voiceChannelsIcon__]) {
-  display: none;
-}
-[class^="voiceChannelsButton__"] {
-    display: none;
-}
-
-/* Hide Gift */
-[class^=giftButtonContainer__] {
-  display: none;
-}
-
-/* Hide Inbox (unless notifs) */
-.recentsIcon__3c4cf:not(:has(.iconBadge_cc5031))
-{ 
-  display: none;
+[class^=bar__]:has([class^=voiceChannelsIcon__]), /* idk */
+[class^="voiceChannelsButton__"], /* idk either */
+[class^=giftButtonContainer__], /* DMs gift button */
+.recentsIcon__3c4cf:not(:has(.iconBadge_cc5031)), /* inbox (unless notifs) */ 
+button[aria-label="Open GIF picker"], /* GIF button */
+button[aria-label="Open sticker picker"], /* stickers button */
+[class^=wumpusWrapper], /* new to discord */
+[class^="iconItem__"]:not([aria-label="Open Chat"]) { /* invite & settings button on channels */
+  display: none !important;
 }
 
 /* No Super Reaction Popup and Effects */
@@ -35,21 +27,6 @@
   opacity: 1 !important;
 }
 
-/* No Invite/Settings Button */
-[class^="iconItem__"]:not([aria-label="Open Chat"]) {
-  display: none !important;
-}
 [class^="iconItem__"]:hover [class^="actionIcon_"] { /* Open Chat */
   color: var(--main-color)
-}
-
-/* Hide GIF/Sticker picker button */
-button[aria-label="Open GIF picker"], 
-button[aria-label="Open sticker picker"] {
-  display: none;
-}
-
-/* No Wumpus */
-[class^=wumpusWrapper] { 
-  display: none; 
 }
