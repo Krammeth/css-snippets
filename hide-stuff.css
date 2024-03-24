@@ -1,7 +1,7 @@
 [class^=bar__]:has([class^=voiceChannelsIcon__]), /* idk */
 [class^="voiceChannelsButton__"], /* idk either */
 [class^=giftButtonContainer__], /* DMs gift button */
-.recentsIcon__3c4cf:not(:has(.iconBadge_cc5031)), /* inbox (unless notifs) */ 
+[class^="recentsIcon__"]:not(:has([class^="iconBadge_"])), /* inbox (unless notifs) */ 
 button[aria-label="Open GIF picker"], /* GIF button */
 button[aria-label="Open sticker picker"], /* stickers button */
 [class^=wumpusWrapper], /* new to discord */
