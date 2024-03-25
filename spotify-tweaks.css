@@ -31,7 +31,7 @@
 [class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) .contentImagesUserPopoutV2__04250 {
   margin-top: 3px; /* fix details being horizontally misaligned */
 }
-[class^="buttonsWrapper_"] [class^="disabledButtonWrapper__"] { /* hide your listen along */
+[class*="buttonsWrapper_"] [class^="disabledButtonWrapper__"] { /* hide your listen along */
   display: none !important;
 }
 [class^="detailsWrap__"] { /* Fix Author Overflow */
