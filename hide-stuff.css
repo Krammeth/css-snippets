@@ -5,8 +5,9 @@
 button[aria-label="Open GIF picker"], /* [GIF] in chatbar */
 button[aria-label="Open sticker picker"], /* [Sticker] in chatbar */
 [class^=wumpusWrapper], /* new to discord */
-[class*="pencilContainer_"], /* pencil on banner */
-[class*="popoutBannerPremium__"] [class*="gifTag__"], /* [gif] on banner */
+[class*="pencilContainer_"], /* pencil on profile banner */
+[class*="popoutBannerPremium__"] [class*="gifTag__"], /* [gif] on profile banner */
+.section__76155, /* [message] in profile */
 button[aria-label="Focus"], /* [Focus] in VCs */
 button[aria-label="Grid"], /* [Grid] in VCs */
 button[aria-label="Invite"], /* [Invite] in VCs */
