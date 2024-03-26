@@ -2,11 +2,14 @@
 [class^="voiceChannelsButton__"], /* idk either */
 [class^=giftButtonContainer__], /* DMs gift button */
 [class^="recentsIcon__"]:not(:has([class^="iconBadge_"])), /* inbox (unless notifs) */ 
-button[aria-label="Open GIF picker"], /* GIF button */
-button[aria-label="Open sticker picker"], /* stickers button */
+button[aria-label="Open GIF picker"], /* [GIF] in chatbar */
+button[aria-label="Open sticker picker"], /* [Sticker] in chatbar */
 [class^=wumpusWrapper], /* new to discord */
 [class*="pencilContainer_"], /* pencil on banner */
 [class*="popoutBannerPremium__"] [class*="gifTag__"], /* [gif] on banner */
+button[aria-label="Focus"], /* [Focus] in VCs */
+button[aria-label="Grid"], /* [Grid] in VCs */
+button[aria-label="Invite"], /* [Invite] in VCs */
 [class^="iconItem__"]:not([aria-label="Open Chat"]) { /* invite & settings button on channels */
   display: none !important;
 }
