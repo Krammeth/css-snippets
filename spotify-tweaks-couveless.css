@@ -16,17 +16,17 @@
 [class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) .contentImagesUserPopoutV2__04250 > div:first-child::before {
   content: "🎵";
   margin-top: -6px;
-  left: 75.5px;
+  left: 73.5px;
 }
 [class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) .contentImagesUserPopoutV2__04250 > div:nth-child(2)::before {
   content: "🎤";
   margin-top: -6px;
-  left: 75.5px;
+  left: 73.5px;
 }
 [class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) .contentImagesUserPopoutV2__04250 > div:nth-child(3)::before {
   content: "💿";
   margin-top: -6px;
-  left: 75.5px;
+  left: 73.5px;
 }
 [class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) .contentImagesUserPopoutV2__04250 {
   margin-top: 3px; /* fix details being horizontally misaligned */
