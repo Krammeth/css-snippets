@@ -39,6 +39,10 @@
  overflow: hidden;
  text-overflow: ellipsis;
 }
+[class*="assetsLargeImage"] {
+  border-radius: 10px !important;
+  max-width: 60px;
+}
 
 /* Spotify Controls */
 #vc-spotify-titles { 
