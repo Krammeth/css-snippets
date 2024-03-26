@@ -48,6 +48,7 @@
 }
 :root [class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) [class^="bodyNormal_"] [class^="activityDetails__"] {
   margin-left: 5px;
+  max-width: 280px;
 }
 
 /* Spotify Activity */
