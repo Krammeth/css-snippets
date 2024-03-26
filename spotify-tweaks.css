@@ -1,22 +1,30 @@
 /* directly from Couve */
-:root .userPopoutOuter_d739b2 .userPopoutOverlayBackground_d8afa4 .activity__20c1e {
+:root [class^="userPopoutOuter_"] [class^="userPopoutOverlayBackground_"] [class^="activity__"],
+:root [class^="userPanelOuter_"] [class^="userPanelOverlayBackground__"]:nth-child(2) [class^="activity__"] {
   z-index: 1;
 }
-:root .userPopoutOuter_d739b2 .userPopoutOverlayBackground_d8afa4 .activity__20c1e .assetsLargeImageSpotify__06348 {
+:root [class^="userPopoutOuter_"] [class^="userPopoutOverlayBackground_"] [class^="activity__"] [class^="assetsLargeImageSpotify__"],
+:root [class^="userPanelOuter_"] [class^="userPanelOverlayBackground__"]:nth-child(2) [class^="activity__"] [class^="assetsLargeImageSpotify__"] {
   border-radius: 8px !important;
   margin-left: 6px;
 }
-:root .userPopoutOuter_d739b2 .userPopoutOverlayBackground_d8afa4 .activity__20c1e .content_d7cb7f {
+:root [class^="userPopoutOuter_"] [class^="userPopoutOverlayBackground_"] [class^="activity__"] [class^="content_"],
+:root [class^="userPanelOuter_"] [class^="userPanelOverlayBackground__"]:nth-child(2) [class^="activity__"] [class^="content_"] {
   margin-right: 8px;
 }
-:root .userPopoutOuter_d739b2 .userPopoutOverlayBackground_d8afa4 .activity__20c1e .button__9491f {
+:root [class^="userPopoutOuter_"] [class^="userPopoutOverlayBackground_"] [class^="activity__"] [class^="button__"],
+:root [class^="userPanelOuter_"] [class^="userPanelOverlayBackground__"]:nth-child(2) [class^="activity__"] [class^="button__"] {
   background-color: var(--main-color);
   opacity: 1;
 }
-:root .userPopoutOuter_d739b2 .userPopoutOverlayBackground_d8afa4 .activity__20c1e .platformIcon__05c5e {
+:root [class^="userPopoutOuter_"] [class^="userPopoutOverlayBackground_"] [class^="activity__"] [class^="platformIcon__"],
+:root [class^="userPanelOuter_"] [class^="userPanelOverlayBackground__"]:nth-child(2) [class^="activity__"] [class^="platformIcon__"],
+:root [class^="userPopoutOuter_"] [class^="userPopoutOverlayBackground_"] [class^="activity__"] [class^=timeBarUserPopoutV2_] > :last-child,
+:root [class^="userPanelOuter_"] [class^="userPanelOverlayBackground__"]:nth-child(2) [class^="activity__"] [class^=timeBarUserPopoutV2_] > :last-child {
   display: none;
 }
-:root .userPopoutOuter_d739b2 .userPopoutOverlayBackground_d8afa4 .activity__20c1e .timeBarUserPopoutV2_c5b927 {
+:root [class^="userPopoutOuter_"] [class^="userPopoutOverlayBackground_"] [class^="activity__"] [class^=timeBarUserPopoutV2_],
+:root [class^="userPanelOuter_"] [class^="userPanelOverlayBackground__"]:nth-child(2) [class^="activity__"] [class^=timeBarUserPopoutV2_] {
   position: absolute;
   top: 7px;
   left: 0;
@@ -25,64 +33,26 @@
   height: 70px;
   border-radius: 8px;
 }
-:root .userPopoutOuter_d739b2 .userPopoutOverlayBackground_d8afa4 .activity__20c1e .timeBarUserPopoutV2_c5b927 .bar_e63719 {
+:root [class^="userPopoutOuter_"] [class^="userPopoutOverlayBackground_"] [class^="activity__"] [class^=timeBarUserPopoutV2_] [class^="bar_"],
+:root [class^="userPanelOuter_"] [class^="userPanelOverlayBackground__"]:nth-child(2) [class^="activity__"] [class^=timeBarUserPopoutV2_] [class^="bar_"] {
   border-radius: 8px;
   height: 100%;
   background-color: hsl(var(--primary-500-hsl)/.16)
 }
-:root .userPopoutOuter_d739b2 .userPopoutOverlayBackground_d8afa4 .activity__20c1e .timeBarUserPopoutV2_c5b927 .barInner_d1abc6 {
+:root [class^="userPopoutOuter_"] [class^="userPopoutOverlayBackground_"] [class^="activity__"] [class^=timeBarUserPopoutV2_] [class^="barInner_"],
+:root [class^="userPanelOuter_"] [class^="userPanelOverlayBackground__"]:nth-child(2) [class^="activity__"] [class^=timeBarUserPopoutV2_] [class^="barInner_"] {
   border-radius: 8px 0 0 8px;
   opacity: 0.2;
   background-color: var(--text-normal)
 }
-:root .userPopoutOuter_d739b2 .userPopoutOverlayBackground_d8afa4 .activity__20c1e .timeBarUserPopoutV2_c5b927 > :last-child {
-  display: none;
-}
-:root .userPanelOuter__880e5 .userPanelOverlayBackground__34fc8:nth-child(2) .activity__20c1e {
-  z-index: 1;
-}
-:root .userPanelOuter__880e5 .userPanelOverlayBackground__34fc8:nth-child(2) .activity__20c1e .assetsLargeImageSpotify__06348 {
-  border-radius: 8px !important;
-  margin-left: 6px;
-}
-:root .userPanelOuter__880e5 .userPanelOverlayBackground__34fc8:nth-child(2) .activity__20c1e .content_d7cb7f {
-  margin-right: 8px;
-}
-:root .userPanelOuter__880e5 .userPanelOverlayBackground__34fc8:nth-child(2) .activity__20c1e .button__9491f {
-  background-color: var(--main-color);
-  opacity: 1;
-}
-:root .userPanelOuter__880e5 .userPanelOverlayBackground__34fc8:nth-child(2) .activity__20c1e .platformIcon__05c5e {
-  display: none;
-}
-:root .userPanelOuter__880e5 .userPanelOverlayBackground__34fc8:nth-child(2) .activity__20c1e .timeBarUserPopoutV2_c5b927 {
-  position: absolute;
-  top: 7px;
-  left: 0;
-  z-index: -1;
-  width: 100%;
-  height: 70px;
-  border-radius: 8px;
-}
-:root .userPanelOuter__880e5 .userPanelOverlayBackground__34fc8:nth-child(2) .activity__20c1e .timeBarUserPopoutV2_c5b927 .bar_e63719 {
-  border-radius: 8px;
-  height: 100%;
-}
-:root .userPanelOuter__880e5 .userPanelOverlayBackground__34fc8:nth-child(2) .activity__20c1e .timeBarUserPopoutV2_c5b927 .barInner_d1abc6 {
-  border-radius: 8px 0 0 8px;
-  opacity: 0.2;
-}
-:root .userPanelOuter__880e5 .userPanelOverlayBackground__34fc8:nth-child(2) .activity__20c1e .timeBarUserPopoutV2_c5b927 > :last-child {
-  display: none;
-}
 
 /* Spotify Activity */
-[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) .contentImagesUserPopoutV2__04250 {
+[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) [class^=contentImagesUserPopoutV2_] {
   margin-left: 22px;
 }
-[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) .contentImagesUserPopoutV2__04250 > div:first-child::before,
-[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) .contentImagesUserPopoutV2__04250 > div:nth-child(2)::before,
-[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) .contentImagesUserPopoutV2__04250 > div:nth-child(3)::before,
+[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) [class^=contentImagesUserPopoutV2_] > div:first-child::before,
+[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) [class^=contentImagesUserPopoutV2_] > div:nth-child(2)::before,
+[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) [class^=contentImagesUserPopoutV2_] > div:nth-child(3)::before,
 #vc-spotify-titles > div:first-child::before,
 #vc-spotify-titles > div:nth-child(2)::before,
 #vc-spotify-titles > div:nth-child(3)::before {
@@ -91,22 +61,22 @@
   margin-top: 2px;
   position: absolute;
 }
-[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) .contentImagesUserPopoutV2__04250 > div:first-child::before {
+[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) [class^=contentImagesUserPopoutV2_] > div:first-child::before {
   content: "🎵";
   margin-top: -6px;
   left: 77px;
 }
-[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) .contentImagesUserPopoutV2__04250 > div:nth-child(2)::before {
+[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) [class^=contentImagesUserPopoutV2_] > div:nth-child(2)::before {
   content: "🎤";
   margin-top: -6px;
   left: 77px;
 }
-[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) .contentImagesUserPopoutV2__04250 > div:nth-child(3)::before {
+[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) [class^=contentImagesUserPopoutV2_] > div:nth-child(3)::before {
   content: "💿";
   margin-top: -6px;
   left: 77px;
 }
-[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) .contentImagesUserPopoutV2__04250 {
+[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) [class^=contentImagesUserPopoutV2_] {
   margin-top: 3px; /* fix details being horizontally misaligned */
 }
 [class^=activity] [class*=buttonsWrapper_]:has([class^=disabledButtonWrapper__]) { /* hide your listen along */
