@@ -1,3 +1,20 @@
+:root .userPopoutOuter_d739b2 .userPopoutOverlayBackground_d8afa4 .activity__20c1e {
+  z-index: 1;
+}
+:root .userPopoutOuter_d739b2 .userPopoutOverlayBackground_d8afa4 .activity__20c1e .assetsLargeImageSpotify__06348 {
+  border-radius: 8px !important;
+  margin-left: 6px;
+}
+:root .userPopoutOuter_d739b2 .userPopoutOverlayBackground_d8afa4 .activity__20c1e .content_d7cb7f {
+  margin-right: 8px;
+}
+:root .userPopoutOuter_d739b2 .userPopoutOverlayBackground_d8afa4 .activity__20c1e .button__9491f {
+  background-color: var(--main-color);
+  opacity: 1;
+}
+:root .userPopoutOuter_d739b2 .userPopoutOverlayBackground_d8afa4 .activity__20c1e .platformIcon__05c5e {
+  display: none;
+}
 :root .userPopoutOuter_d739b2 .userPopoutOverlayBackground_d8afa4 .activity__20c1e .timeBarUserPopoutV2_c5b927 {
   position: absolute;
   top: 7px;
