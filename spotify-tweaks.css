@@ -17,10 +17,10 @@
   background-color: var(--main-color);
   opacity: 1;
 }
-:root [class^="userPopoutOuter_"] [class^="userPopoutOverlayBackground_"] [class^="activity__"] [class^="platformIcon__"],
-:root [class^="userPanelOuter_"] [class^="userPanelOverlayBackground__"]:nth-child(2) [class^="activity__"] [class^="platformIcon__"],
-:root [class^="userPopoutOuter_"] [class^="userPopoutOverlayBackground_"] [class^="activity__"] [class^=timeBarUserPopoutV2_] > :last-child,
-:root [class^="userPanelOuter_"] [class^="userPanelOverlayBackground__"]:nth-child(2) [class^="activity__"] [class^=timeBarUserPopoutV2_] > :last-child {
+:root [class^="userPopoutOuter_"] [class^="userPopoutOverlayBackground_"] [class^="activity__"] [class*="platformIcon__"],
+:root [class^="userPanelOuter_"] [class^="userPanelOverlayBackground__"]:nth-child(2) [class^="activity__"] [class*="platformIcon__"],
+:root [class^="userPopoutOuter_"] [class^="userPopoutOverlayBackground_"] [class^="activity__"] [class*=timeBarUserPopoutV2_] > :last-child,
+:root [class^="userPanelOuter_"] [class^="userPanelOverlayBackground__"]:nth-child(2) [class^="activity__"] [class*=timeBarUserPopoutV2_] > :last-child {
   display: none;
 }
 :root [class^="userPopoutOuter_"] [class^="userPopoutOverlayBackground_"] [class^="activity__"] [class^=timeBarUserPopoutV2_],
