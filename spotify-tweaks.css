@@ -47,12 +47,12 @@
 }
 
 /* Spotify Activity */
-[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) [class^=contentImagesUserPopoutV2_] {
+[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) [class*=contentImagesUserPopoutV2_] {
   margin-left: 22px;
 }
-[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) [class^=contentImagesUserPopoutV2_] > div:first-child::before,
-[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) [class^=contentImagesUserPopoutV2_] > div:nth-child(2)::before,
-[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) [class^=contentImagesUserPopoutV2_] > div:nth-child(3)::before,
+[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) [class*=contentImagesUserPopoutV2_] > div:first-child::before,
+[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) [class*=contentImagesUserPopoutV2_] > div:nth-child(2)::before,
+[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) [class*=contentImagesUserPopoutV2_] > div:nth-child(3)::before,
 #vc-spotify-titles > div:first-child::before,
 #vc-spotify-titles > div:nth-child(2)::before,
 #vc-spotify-titles > div:nth-child(3)::before {
@@ -61,22 +61,22 @@
   margin-top: 2px;
   position: absolute;
 }
-[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) [class^=contentImagesUserPopoutV2_] > div:first-child::before {
+[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) [class*=contentImagesUserPopoutV2_] > div:first-child::before {
   content: "🎵";
   margin-top: -6px;
   left: 77px;
 }
-[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) [class^=contentImagesUserPopoutV2_] > div:nth-child(2)::before {
+[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) [class*=contentImagesUserPopoutV2_] > div:nth-child(2)::before {
   content: "🎤";
   margin-top: -6px;
   left: 77px;
 }
-[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) [class^=contentImagesUserPopoutV2_] > div:nth-child(3)::before {
+[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) [class*=contentImagesUserPopoutV2_] > div:nth-child(3)::before {
   content: "💿";
   margin-top: -6px;
   left: 77px;
 }
-[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) [class^=contentImagesUserPopoutV2_] {
+[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) [class*=contentImagesUserPopoutV2_] {
   margin-top: 3px; /* fix details being horizontally misaligned */
 }
 [class^=activity] [class*=buttonsWrapper_]:has([class^=disabledButtonWrapper__]) { /* hide your listen along */
