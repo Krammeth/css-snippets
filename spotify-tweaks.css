@@ -27,10 +27,12 @@
 :root .userPopoutOuter_d739b2 .userPopoutOverlayBackground_d8afa4 .activity__20c1e .timeBarUserPopoutV2_c5b927 .bar_e63719 {
   border-radius: 8px;
   height: 100%;
+  background-color: hsl(var(--primary-500-hsl)/.16)
 }
 :root .userPopoutOuter_d739b2 .userPopoutOverlayBackground_d8afa4 .activity__20c1e .timeBarUserPopoutV2_c5b927 .barInner_d1abc6 {
   border-radius: 8px 0 0 8px;
   opacity: 0.2;
+  background-color: var(--text-normal)
 }
 :root .userPopoutOuter_d739b2 .userPopoutOverlayBackground_d8afa4 .activity__20c1e .timeBarUserPopoutV2_c5b927 > :last-child {
   display: none;
