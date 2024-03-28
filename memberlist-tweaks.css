@@ -4,7 +4,7 @@
   --user-width: 240px
 }
 .container_b2ce9c,
-[class^="membersWrap__"] {
+[class^="membersWrap_"] {
   transition-duration: 0.3s;
   justify-content: unset;
   min-width: unset;
@@ -18,16 +18,16 @@
   padding-top: 0px
 }
 .container_b2ce9c:hover [class^="membersGroup_"],
-[class^="membersWrap__"]:hover [class^="membersGroup_"] {
+[class^="membersWrap_"]:hover [class^="membersGroup_"] {
   height: 40px;
   padding-top: 24px;
 }
-.container_b2ce9c:hover [class^="membersWrap__"],
+.container_b2ce9c:hover [class^="membersWrap_"],
 .container_b2ce9c:hover,
-[class^="membersWrap__"]:hover {
+[class^="membersWrap_"]:hover {
   width: var(--user-width);
 }
-[class^="chatContent__"] {
+[class^="chatContent_"] {
   max-width: 94.5%;
 }
 
@@ -39,9 +39,9 @@
 .vc-membercount-total { /* total */
   display: none;
 }
-[class^="membersWrap__"]:hover .vc-membercount-online, 
+[class^="membersWrap_"]:hover .vc-membercount-online, 
 .container_b2ce9c:hover .vc-membercount-online,
-[class^="membersWrap__"]:hover .vc-membercount-total,
+[class^="membersWrap_"]:hover .vc-membercount-total,
 .container_b2ce9c:hover .vc-membercount-total {
   display: initial;
 }
