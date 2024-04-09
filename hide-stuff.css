@@ -1,5 +1,6 @@
 [class^="voiceChannelsButton_"], /* [voice channels] */
 [class^=giftButtonContainer__], /* DMs gift button */
+[class*="profileMutuals_"], /* profile mutuals */
 [class^="recentsIcon_"]:not(:has([class^="iconBadge_"])), /* inbox (unless notifs) */ 
 button[aria-label="Open GIF picker"], /* [GIF] in chatbar */
 button[aria-label="Open sticker picker"], /* [Sticker] in chatbar */
