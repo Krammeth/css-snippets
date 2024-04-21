@@ -61,6 +61,10 @@
     max-width: 43.2px; } /* prevent larger covers from breaking stuff */
 #vc-spotify-album-expanded-wrapper #vc-spotify-album-image 
   { max-width: initial !important; }
+[class*=vc-spotify-shuffle-on] > svg, 
+[class*=vc-spotify-repeat-context] > svg,
+[class*=vc-spotify-repeat-track] > svg 
+  { fill: var(--main-color) }
 
 /* no album art fixes */
 #vc-spotify-info-wrapper:not(:has(#vc-spotify-album-image)) #vc-spotify-titles > div:first-child::before 
@@ -75,8 +79,3 @@
   { content: "💿";
     margin-top: -6px;
     left: 15px; }
-
-[class*=vc-spotify-shuffle-on] > svg, 
-[class*=vc-spotify-repeat-context] > svg,
-[class*=vc-spotify-repeat-track] > svg 
-  { fill: var(--main-color) }
