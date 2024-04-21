@@ -1,130 +1,123 @@
-/* directly from Couve */
+/**
+ * @name SpotifyTweaks
+ * @author @krammeth (and @nyri4)
+ * @description Spice your activity and SpotifyControls panel up!
+ * @version 1.3
+*/
+
+/* from Couve */
 :root [class^="userPopoutOuter_"] [class^="userPopoutOverlayBackground_"] [class*="activity__"],
-:root [class^="userPanelOuter_"] [class^="userPanelOverlayBackground__"]:nth-child(2) [class*="activity__"] {
-  z-index: 1;
-}
+:root [class^="userPanelOuter_"] [class^="userPanelOverlayBackground__"]:nth-child(2) [class*="activity__"] 
+  { z-index: 1; }
 :root [class^="userPopoutOuter_"] [class^="userPopoutOverlayBackground_"] [class*="activity__"] [class^="assetsLargeImageSpotify__"],
-:root [class^="userPanelOuter_"] [class^="userPanelOverlayBackground__"]:nth-child(2) [class*="activity__"] [class^="assetsLargeImageSpotify__"] {
-  border-radius: 8px !important;
-  margin-left: 6px;
-}
+:root [class^="userPanelOuter_"] [class^="userPanelOverlayBackground__"]:nth-child(2) [class*="activity__"] [class^="assetsLargeImageSpotify__"] 
+  { border-radius: 8px !important;
+    margin-left: 6px; }
 :root [class^="userPopoutOuter_"] [class^="userPopoutOverlayBackground_"] [class*="activity__"] [class^="content_"],
-:root [class^="userPanelOuter_"] [class^="userPanelOverlayBackground__"]:nth-child(2) [class*="activity__"] [class^="content_"] {
-  margin-right: 8px;
-}
+:root [class^="userPanelOuter_"] [class^="userPanelOverlayBackground__"]:nth-child(2) [class*="activity__"] [class^="content_"] 
+  { margin-right: 8px; }
 :root [class^="userPopoutOuter_"] [class^="userPopoutOverlayBackground_"] [class*="activity__"] [class^="button__"],
-:root [class^="userPanelOuter_"] [class^="userPanelOverlayBackground__"]:nth-child(2) [class*="activity__"] [class^="button__"] {
-  background-color: var(--main-color);
-  opacity: 1;
-}
+:root [class^="userPanelOuter_"] [class^="userPanelOverlayBackground__"]:nth-child(2) [class*="activity__"] [class^="button__"] 
+  { background-color: var(--main-color);
+    opacity: 1; }
 :root [class^="userPopoutOuter_"] [class^="userPopoutOverlayBackground_"] [class*="activity__"] [class^="platformIcon__"],
 :root [class^="userPanelOuter_"] [class^="userPanelOverlayBackground__"]:nth-child(2) [class*="activity__"] [class^="platformIcon__"],
 :root [class^="userPopoutOuter_"] [class^="userPopoutOverlayBackground_"] [class*="activity__"] [class^=timeBarUserPopoutV2_] > :last-child,
-:root [class^="userPanelOuter_"] [class^="userPanelOverlayBackground__"]:nth-child(2) [class*="activity__"] [class^=timeBarUserPopoutV2_] > :last-child {
-  display: none;
-}
+:root [class^="userPanelOuter_"] [class^="userPanelOverlayBackground__"]:nth-child(2) [class*="activity__"] [class^=timeBarUserPopoutV2_] > :last-child 
+  { display: none; }
 :root [class^="userPopoutOuter_"] [class^="userPopoutOverlayBackground_"] [class*="activity__"] [class^=timeBarUserPopoutV2_] [class^="barInMultiLine_"],
-:root [class^="userPanelOuter_"] [class^="userPanelOverlayBackground__"]:nth-child(2) [class*="activity__"] [class^=timeBarUserPopoutV2_] [class^="barInMultiLine_"] {
-  position: absolute;
-  top: 7px;
-  margin-top: 12px;
-  left: 0px;
-  z-index: -1;
-  width: 100%;
-  height: 70px;
-  border-radius: 8px;
-}
+:root [class^="userPanelOuter_"] [class^="userPanelOverlayBackground__"]:nth-child(2) [class*="activity__"] [class^=timeBarUserPopoutV2_] [class^="barInMultiLine_"] 
+  { position: absolute;
+    margin-top: 12px;
+    left: 0px; top: 7px;
+    z-index: -1;
+    width: 100%; height: 70px;
+    border-radius: 8px; }
 :root [class^="userPopoutOuter_"] [class^="userPopoutOverlayBackground_"] [class*="activity__"] [class^=timeBarUserPopoutV2_] [class^="bar_"],
-:root [class^="userPanelOuter_"] [class^="userPanelOverlayBackground__"]:nth-child(2) [class*="activity__"] [class^=timeBarUserPopoutV2_] [class^="bar_"] {
-  border-radius: 8px;
-  height: 100%;
-  background-color: hsl(var(--primary-500-hsl)/.16)
-}
+:root [class^="userPanelOuter_"] [class^="userPanelOverlayBackground__"]:nth-child(2) [class*="activity__"] [class^=timeBarUserPopoutV2_] [class^="bar_"] 
+  { border-radius: 8px;
+    height: 100%;
+    background-color: hsl(var(--primary-500-hsl)/.16) }
 :root [class^="userPopoutOuter_"] [class^="userPopoutOverlayBackground_"] [class*="activity__"] [class^=timeBarUserPopoutV2_] [class^="barInner_"],
-:root [class^="userPanelOuter_"] [class^="userPanelOverlayBackground__"]:nth-child(2) [class*="activity__"] [class^=timeBarUserPopoutV2_] [class^="barInner_"] {
-  border-radius: 8px 0 0 8px;
-  opacity: 0.2;
-  background-color: var(--text-normal)
-}
-:root [class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) [class^="bodyNormal_"] [class^="activityDetails__"] {
-  margin-left: 5px;
-  max-width: 280px;
-}
+:root [class^="userPanelOuter_"] [class^="userPanelOverlayBackground__"]:nth-child(2) [class*="activity__"] [class^=timeBarUserPopoutV2_] [class^="barInner_"] 
+  { border-radius: 8px 0 0 8px;
+    opacity: 0.2;
+    background-color: var(--text-normal) }
+:root [class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) [class^="bodyNormal_"] [class^="activityDetails__"] 
+  { margin-left: 5px;
+    max-width: 280px; }
 
 /* Spotify Activity */
-[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) [class^=contentImagesUserPopoutV2_] {
-  margin-left: 22px;
-}
+[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) [class^=contentImagesUserPopoutV2_] 
+  { margin-left: 22px; }
 [class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) [class^=contentImagesUserPopoutV2_] > div:first-child::before,
 [class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) [class^=contentImagesUserPopoutV2_] > div:nth-child(2)::before,
 [class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) [class^=contentImagesUserPopoutV2_] > div:nth-child(3)::before,
 #vc-spotify-titles > div:first-child::before,
 #vc-spotify-titles > div:nth-child(2)::before,
-#vc-spotify-titles > div:nth-child(3)::before {
-  padding: 7px;
-  margin-left: -17px;
-  margin-top: 2px;
-  position: absolute;
-}
-[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) [class^=contentImagesUserPopoutV2_] > div:first-child::before {
-  content: "🎵";
-  margin-top: -6px;
-  left: 77px;
-}
-[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) [class^=contentImagesUserPopoutV2_] > div:nth-child(2)::before {
-  content: "🎤";
-  margin-top: -6px;
-  left: 77px;
-}
-[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) [class^=contentImagesUserPopoutV2_] > div:nth-child(3)::before {
-  content: "💿";
-  margin-top: -6px;
-  left: 77px;
-}
-[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) [class^=contentImagesUserPopoutV2_] {
-  margin-top: 3px; /* fix details being horizontally misaligned */
-}
-[class^=activity] [class*=buttonsWrapper_]:has([class^=disabledButtonWrapper__]) { /* hide your listen along */
-  display: none !important;
-}
-[class^="detailsWrap__"] { /* Fix Author Overflow */
- white-space: nowrap;
- overflow: hidden;
- text-overflow: ellipsis;
-}
-[class*="assetsLargeImage"] {
-  border-radius: 10px !important;
-  max-width: 60px;
-}
+#vc-spotify-titles > div:nth-child(3)::before 
+  { padding: 7px;
+    margin-left: -17px; margin-top: 2px;
+    position: absolute; }
+
+[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) [class^=contentImagesUserPopoutV2_] > div:first-child::before 
+  { content: "🎵";
+    margin-top: -6px;
+    left: 77px; }
+[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) [class^=contentImagesUserPopoutV2_] > div:nth-child(2)::before 
+  { content: "🎤";
+    margin-top: -6px;
+    left: 77px; }
+[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) [class^=contentImagesUserPopoutV2_] > div:nth-child(3)::before 
+  { content: "💿";
+    margin-top: -6px;
+    left: 77px; }
+
+[class^="activityUserPopoutV2__"]:has([class^=timeBarUserPopoutV2_]) [class^=contentImagesUserPopoutV2_] 
+  { margin-top: 3px; } /* fix details being horizontally misaligned */
+[class^=activity] [class*=buttonsWrapper_]:has([class^=disabledButtonWrapper__]) 
+  { display: none !important; } /* hide your listen along */
+[class^="detailsWrap__"] 
+  { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } /* Fix Author Overflow */
+[class*="assetsLargeImage"] 
+  { border-radius: 8px !important;
+    max-width: 60px; }
 
 /* Spotify Controls */
-#vc-spotify-titles { 
-  margin-left: 15px; 
-}
-#vc-spotify-titles > div:first-child::before {
-  content: "🎵";
-  margin-top: -6px;
-  left: 65.5px;
-}
-#vc-spotify-titles > div:nth-child(2)::before {
-  content: "🎤";
-  margin-top: -6px;
-  left: 65.5px;
-}
-#vc-spotify-titles > div:nth-child(3)::before {
-  content: "💿";
-  margin-top: -6px;
-  left: 65.5px;
-}
-#vc-spotify-album-image {
-  border-radius: 10px;
-  max-width: 43.2px; /* prevent larger covers from breaking stuff */
-}
-#vc-spotify-album-expanded-wrapper #vc-spotify-album-image {
-  max-width: initial !important;
-}
+#vc-spotify-titles 
+  { margin-left: 15px; }
+#vc-spotify-titles > div:first-child::before 
+  { content: "🎵";
+    margin-top: -6px;
+    left: 65.5px; }
+#vc-spotify-titles > div:nth-child(2)::before 
+  { content: "🎤";
+    margin-top: -6px;
+    left: 65.5px; }
+#vc-spotify-titles > div:nth-child(3)::before 
+  { content: "💿";
+    margin-top: -6px;
+    left: 65.5px; }
+#vc-spotify-album-image 
+  { border-radius: 10px;
+    max-width: 43.2px; } /* prevent larger covers from breaking stuff */
+#vc-spotify-album-expanded-wrapper #vc-spotify-album-image 
+  { max-width: initial !important; }
 [class*=vc-spotify-shuffle-on] > svg, 
 [class*=vc-spotify-repeat-context] > svg,
-[class*=vc-spotify-repeat-track] > svg {
-  fill: var(--main-color)
-}
+[class*=vc-spotify-repeat-track] > svg 
+  { fill: var(--main-color) }
+
+/* no album art fixes */
+#vc-spotify-info-wrapper:not(:has(#vc-spotify-album-image)) #vc-spotify-titles > div:first-child::before 
+  { content: "🎵";
+    margin-top: -6px;
+    left: 15px; }
+#vc-spotify-info-wrapper:not(:has(#vc-spotify-album-image)) #vc-spotify-titles > div:nth-child(2)::before 
+  { content: "🎤";
+    margin-top: -6px;
+    left: 15px; }
+#vc-spotify-info-wrapper:not(:has(#vc-spotify-album-image)) #vc-spotify-titles > div:nth-child(3)::before 
+  { content: "💿";
+    margin-top: -6px;
+    left: 15px; }
