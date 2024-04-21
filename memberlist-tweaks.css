@@ -1,47 +1,44 @@
 /* Minified member list*/
-:root {
-  --hidden-user-width: 65px;
-  --user-width: 240px
-}
-.container_b2ce9c,
-[class^="membersWrap_"] {
-  transition-duration: 0.3s;
-  justify-content: unset;
-  min-width: unset;
-  width: var(--hidden-user-width);
-  position: absolute;
-  right: 0;
-}
-[class^="membersGroup_"] {
-  transition-duration: 0.3s;
-  height: 0px;
-  padding-top: 0px
-}
-.container_b2ce9c:hover [class^="membersGroup_"],
-[class^="membersWrap_"]:hover [class^="membersGroup_"] {
-  height: 40px;
-  padding-top: 24px;
-}
-.container_b2ce9c:hover [class^="membersWrap_"],
-.container_b2ce9c:hover,
-[class^="membersWrap_"]:hover {
-  width: var(--user-width);
-}
-[class^="chatContent_"] {
-  max-width: 94.5%;
-}
+:root 
+  { --hover-animation-speed: 0.25s; }
+
+.container_f79ab4, 
+[class^="membersWrap_"] 
+  { justify-content: unset;
+    min-width: unset; width: 60px;
+    right: 0; }
+[class^="membersWrap_"] [class^="members_"] 
+  { transition: transform var(--hover-animation-speed); }
+[class^="membersWrap_"]:hover [class^="members_"],
+.container_f79ab4:hover [class^="members_"] 
+  { transform: translateX(-179px); }
+[class^="membersWrap_"] [class^="membersGroup_"]::after 
+  { content:"";
+    width: 32px; height: 3px;
+    border-radius: var(--avatar-radius);
+    background-color: var(--text-normal);
+    position: absolute;
+    left: -38px; top: 29px;
+    margin-left: 8px; }
+[class^="membersWrap_"]:hover [class^="membersGroup_"],
+.container_f79ab4:hover [class^="membersGroup_"] 
+  { transform: translateX(-3px); }
+[class^="membersWrap_"] [class^="membersGroup_"] 
+  { cursor: default;
+    transform: translateX(45px);
+    transition: transform var(--hover-animation-speed);
+    overflow: visible; }
+[class^="membersWrap_"] [class^="members_"] [class^="member_"] 
+  { left: -6px; } /* fix pfps being misaligned */
 
 /* Membercount Tweaks */
-.vc-membercount-widget { /* removes counters */
-  display: flex;
-}
-.vc-membercount-online, /* online */
-.vc-membercount-total { /* total */
-  display: none;
-}
+.vc-membercount-widget 
+  { display: flex; } /* removes counters */
+.vc-membercount-online,
+.vc-membercount-total 
+  { display: none; }
 [class^="membersWrap_"]:hover .vc-membercount-online, 
-.container_b2ce9c:hover .vc-membercount-online,
+.container_f79ab4:hover .vc-membercount-online,
 [class^="membersWrap_"]:hover .vc-membercount-total,
-.container_b2ce9c:hover .vc-membercount-total {
-  display: initial;
-}
+.container_f79ab4:hover .vc-membercount-total 
+  { display: initial; }
