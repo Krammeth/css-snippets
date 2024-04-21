@@ -1,3 +1,10 @@
+/**
+ * @name Hide this!
+ * @author @Krammeth
+ * @description Hides a bunch of useless stuff
+ * @version 1.0
+*/
+
 [class^="voiceChannelsButton_"], /* [voice channels] */
 [class^=giftButtonContainer__], /* DMs gift button */
 [class*="profileMutuals_"], /* profile mutuals */
