@@ -6,22 +6,22 @@
 */
 
 /* from Couve */
-:root [class^="userPopoutOuter_"] [class^="userPopoutOverlayBackground_"] [class*="activity__"],
-:root [class^="userPanelOuter_"] [class^="userPanelOverlayBackground__"]:nth-child(2) [class*="activity__"] 
+:root [class^="userPopoutOuter_"] [class^="userPopoutOverlayBackground_"] [class*="activity_"],
+:root [class^="userPanelOuter_"] [class^="userPanelOverlayBackground__"]:nth-child(2) [class*="activity_"] 
   { z-index: 1; }
-:root [class^="userPopoutOuter_"] [class^="userPopoutOverlayBackground_"] [class*="activity__"] [class^="assetsLargeImageSpotify__"],
-:root [class^="userPanelOuter_"] [class^="userPanelOverlayBackground__"]:nth-child(2) [class*="activity__"] [class^="assetsLargeImageSpotify__"] 
+:root [class^="userPopoutOuter_"] [class^="userPopoutOverlayBackground_"] [class*="activity__"] [class^="assetsLargeImageSpotify_"],
+:root [class^="userPanelOuter_"] [class^="userPanelOverlayBackground__"]:nth-child(2) [class*="activity__"] [class^="assetsLargeImageSpotify_"] 
   { border-radius: 8px !important;
     margin-left: 6px; }
 :root [class^="userPopoutOuter_"] [class^="userPopoutOverlayBackground_"] [class*="activity__"] [class^="content_"],
 :root [class^="userPanelOuter_"] [class^="userPanelOverlayBackground__"]:nth-child(2) [class*="activity__"] [class^="content_"] 
   { margin-right: 8px; }
-:root [class^="userPopoutOuter_"] [class^="userPopoutOverlayBackground_"] [class*="activity__"] [class^="button__"],
-:root [class^="userPanelOuter_"] [class^="userPanelOverlayBackground__"]:nth-child(2) [class*="activity__"] [class^="button__"] 
+:root [class^="userPopoutOuter_"] [class^="userPopoutOverlayBackground_"] [class*="activity__"] [class^="button_"],
+:root [class^="userPanelOuter_"] [class^="userPanelOverlayBackground__"]:nth-child(2) [class*="activity__"] [class^="button_"] 
   { background-color: var(--main-color);
     opacity: 1; }
-:root [class^="userPopoutOuter_"] [class^="userPopoutOverlayBackground_"] [class*="activity__"] [class^="platformIcon__"],
-:root [class^="userPanelOuter_"] [class^="userPanelOverlayBackground__"]:nth-child(2) [class*="activity__"] [class^="platformIcon__"],
+:root [class^="userPopoutOuter_"] [class^="userPopoutOverlayBackground_"] [class*="activity__"] [class^="platformIcon_"],
+:root [class^="userPanelOuter_"] [class^="userPanelOverlayBackground__"]:nth-child(2) [class*="activity__"] [class^="platformIcon_"],
 :root [class^="userPopoutOuter_"] [class^="userPopoutOverlayBackground_"] [class*="activity__"] [class^=timeBarUserPopoutV2_] > :last-child,
 :root [class^="userPanelOuter_"] [class^="userPanelOverlayBackground__"]:nth-child(2) [class*="activity__"] [class^=timeBarUserPopoutV2_] > :last-child 
   { display: none; }
