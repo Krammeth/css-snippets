@@ -1,4 +1,10 @@
-/* Minified member list*/
+/**
+ * @name Minified MemberList (Couve)
+ * @author @krammeth
+ * @description Hide the memberlist until hover
+ * @version 1.1
+*/
+
 :root 
   { --hover-animation-speed: 0.25s; }
 
