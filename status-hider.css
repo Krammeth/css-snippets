@@ -1,0 +1,27 @@
+/**
+* @name Status Hider
+* @version 1.1
+* @description Prevents specific users' status to show
+* @author @Krammeth
+* @website https://github.com/Krammeth
+*/
+
+[src*="ID"] { /* <- copy the [src*="ID"] to add more people */
+  [class^=avatarStack_] > & { 
+    [class^=member_] [class^=memberInner_]:has(&) [class^=content_] [class^=subText_] > [class^=activity_], /* memberlist */
+    [class^=privateChannels_] > [class^=scroller_] [class^=content_] > [class^=channel_]:has(&) [class^=subText_], /* DMs list */
+    [class^=peopleListItem_] [class^=userInfo_]:has(&) [class^=subtext_] { /* friends list */
+      display: none; 
+    } 
+    [class^=userPopoutInner_] header:has(&), /* popout */
+    [class^=userProfileModalInner_] header:has(&), /* full popout */
+    [class^=userPanelInner_] header:has(&) { /* DMs panel */
+      & div:not([class]) { 
+        & > [class^=invisibleContainer_],
+        & > [class^=visibleContainer_] { 
+          display: none; 
+        } 
+      } 
+    } 
+  } 
+}
