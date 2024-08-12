@@ -9,7 +9,7 @@ a bunch of stuff I either have or use on my discord for easier imports
     <th>Image Preview</th>
   </tr> 
   <tr>
-    <td>Status Hider</td>
+    <td><a href='https://github.com/Krammeth/css-snippets/blob/9ededd3c7e4444b725e1efab0c4a7ecc58e99be7/status-hider.css'>Status Hider</a></td>
     <td>Hides one or more selected users' status</td>
     <td>coming soon™️</td>
   </tr>
