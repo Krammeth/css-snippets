@@ -14,7 +14,7 @@ a bunch of stuff I either have or use on my discord for easier imports
     <td>coming soon™️</td>
   </tr>
   <tr>
-    <td>Settings Animation</td>
+    <td><a href='https://github.com/Krammeth/css-snippets/blob/1633c467cd884b17cf051d91b0b2f4c04df49f6f/settings-animation.css'>Settings Animation</a></td>
     <td>Speeds the settings page opening up by removing its animations</td>
     <td>coming soon™️</td>
   </tr>
