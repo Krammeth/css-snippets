@@ -1,0 +1,22 @@
+#app-mount [class^=baseLayer_] { 
+  opacity: 1;
+  transform: scale(1); 
+}
+[class^=baseLayer_][aria-hidden="true"] { 
+  pointer-events: none; 
+}
+[class^=standardSidebarView_] { 
+  opacity: 1; 
+}
+[class^=layer_]{
+  & + [class^=layer_] { 
+    opacity: 1;
+    transform: unset; 
+  } 
+  &[aria-hidden="false"] + [class^=layer_][aria-hidden="false"] { 
+    display: none; 
+  }
+}
+[class^=layers_]>[class^=layer_][class^=animating_] { 
+  will-change: unset; 
+}
