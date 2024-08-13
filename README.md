@@ -13,4 +13,9 @@ a bunch of stuff I either have or use on my discord for easier imports
     <td>Hides one or more selected users' status</td>
     <td>coming soon™️</td>
   </tr>
+  <tr>
+    <td>Settings Animation</td>
+    <td>Speeds the settings page opening up by removing its animations</td>
+    <td>coming soon™️</td>
+  </tr>
 </table>
