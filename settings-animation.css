@@ -1,3 +1,11 @@
+/**
+* @name Remove Settings Animations
+* @version 1.0
+* @description Speeds the settings page opening up
+* @author @Krammeth
+* @website https://github.com/Krammeth
+*/
+
 #app-mount [class^=baseLayer_] { 
   opacity: 1;
   transform: scale(1); 
