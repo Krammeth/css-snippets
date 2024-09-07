@@ -6,22 +6,31 @@
 * @website https://github.com/Krammeth
 */
 
+/* hide specific users' status */
 [src*="ID"] { /* <- copy the [src*="ID"] to add more people */
   [class^=avatarStack_] > & { 
-    [class^=member_] [class^=memberInner_]:has(&) [class^=content_] [class^=subText_] > [class^=activity_], /* memberlist */
+    [class^=member_] [class^=memberInner_]:has(&) [class^=content_] [class^=subText_] > [class^=activity_], /* members list */
     [class^=privateChannels_] > [class^=scroller_] [class^=content_] > [class^=channel_]:has(&) [class^=subText_], /* DMs list */
     [class^=peopleListItem_] [class^=userInfo_]:has(&) [class^=subtext_] { /* friends list */
       display: none; 
     } 
-    [class^=userPopoutInner_] header:has(&), /* popout */
+    [class^=biteSizeInner_] header:has(&), /* popout */
     [class^=userProfileModalInner_] header:has(&), /* full popout */
     [class^=userPanelInner_] header:has(&) { /* DMs panel */
-      & div:not([class]) { 
+      & div:not([class]) {
         & > [class^=invisibleContainer_],
         & > [class^=visibleContainer_] { 
-          display: none; 
+        display: none; 
         } 
-      } 
+      }
     } 
-  } 
+    /* now hides their activities as well */
+    [class^=biteSizeInner_]:has(&) [class^=body_], /* popout */
+    [class^=userProfileModalInner_]:has(&) [class^=body_], /* full popout */
+    [class^=userPanelInner_]:has(&) [class^=body_] { /* DMs panel */
+      & [class*=card_] {
+        display: none;
+      }
+    }
+  }
 }
