@@ -10,8 +10,7 @@
   [class^=avatarStack_] > & { 
     [class^=member_] [class^=memberInner_]:has(&) [class^=content_] [class^=subText_] > [class^=activity_], /* members list */
     [class^=privateChannels_] > [class^=scroller_] [class^=content_] > [class^=channel_]:has(&) [class^=subText_], /* DMs list */
-    [class^=peopleListItem_] [class^=userInfo_]:has(&) [class^=subtext_], /* friends list */
-    [class^=nowPlayingColumn_] [class^=itemCard_]:has(&) { /* active now */ 
+    [class^=peopleListItem_] [class^=userInfo_]:has(&) [class^=subtext_] { /* friends list */
       display: none; 
     } 
     [class^=biteSizeInner_] header:has(&), /* popout */
@@ -31,6 +30,13 @@
       & [class*=card_] {
         display: none;
       }
+    }
+    /* active now tab */
+    [class^=nowPlayingColumn_] [class^=itemCard_]:has(&) {
+        & header div:not([class]) > div:nth-child(2),
+        & [class^=body_] {
+          display: none;
+        }
     }
   }
 }
