@@ -33,10 +33,10 @@
     }
     /* active now tab */
     [class^=nowPlayingColumn_] [class^=itemCard_]:has(&) {
-        & header div:not([class]) > div:nth-child(2),
-        & [class^=body_] {
-          display: none;
-        }
+      & header div:not([class]) > div:nth-child(2),
+      & [class^=body_] {
+        display: none;
+      }
     }
   }
 }
