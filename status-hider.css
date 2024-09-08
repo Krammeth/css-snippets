@@ -1,17 +1,17 @@
 /**
-* @name Status Hider
+* @name StatusHider
 * @version 1.1
 * @description Hides one or more selected users' status
 * @author @Krammeth
 * @website https://github.com/Krammeth
 */
 
-/* hide specific users' status */
 [src*="ID"] { /* <- copy the [src*="ID"] to add more people */
   [class^=avatarStack_] > & { 
     [class^=member_] [class^=memberInner_]:has(&) [class^=content_] [class^=subText_] > [class^=activity_], /* members list */
     [class^=privateChannels_] > [class^=scroller_] [class^=content_] > [class^=channel_]:has(&) [class^=subText_], /* DMs list */
-    [class^=peopleListItem_] [class^=userInfo_]:has(&) [class^=subtext_] { /* friends list */
+    [class^=peopleListItem_] [class^=userInfo_]:has(&) [class^=subtext_], /* friends list */
+    [class^=nowPlayingColumn_] [class^=itemCard_]:has(&) { /* active now */ 
       display: none; 
     } 
     [class^=biteSizeInner_] header:has(&), /* popout */
