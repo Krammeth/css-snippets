@@ -19,7 +19,7 @@
       & div:not([class]) {
         & > [class^=invisibleContainer_],
         & > [class^=visibleContainer_] { 
-        display: none; 
+          display: none; 
         } 
       }
     } 
