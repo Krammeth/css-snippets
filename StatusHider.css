@@ -19,11 +19,14 @@
       & div:not([class]) {
         & > [class^=invisibleContainer_],
         & > [class^=visibleContainer_] { 
-          display: none; 
+        display: none; 
         } 
       }
     } 
     /* now hides their activities as well */
+    div:not([class]):has([class^=userSection] &) { /* activity tab */
+      display: none;
+    }
     [class^=biteSizeInner_]:has(&) [class^=body_], /* popout */
     [class^=userProfileModalInner_]:has(&) [class^=body_], /* full popout */
     [class^=userPanelInner_]:has(&) [class^=body_] { /* DMs panel */
@@ -33,8 +36,9 @@
     }
     /* active now tab */
     [class^=nowPlayingColumn_] [class^=itemCard_]:has(&) {
-      & header div:not([class]) > div:nth-child(2),
-      & [class^=body_] {
+      & header div:not([class]) > div:nth-child(2), /* activity */
+      & header [class^=headerIcon_], /* icon */
+      & [class^=body_] { /* channel */
         display: none;
       }
     }
