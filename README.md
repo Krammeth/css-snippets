@@ -4,8 +4,8 @@ a bunch of stuff I either have or use on my discord, for easier imports
 
 <table>
   <tr> 
-    <th>Snippet Name</th>
-    <th>Description</th>
+    <th>Name</th>
+    <th>What does it do?</th>
     <th>Image Preview</th>
   </tr> 
   <tr>
