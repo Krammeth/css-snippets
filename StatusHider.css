@@ -8,8 +8,8 @@
 
 [src*="ID"] { /* <- copy the [src*="ID"] to add more people */
   [class^=avatarStack_] > & { 
-    [class^=member_] [class^=memberInner_]:has(&) [class^=content_] [class^=subText_] > [class^=activity_], /* members list */
-    [class^=privateChannels_] > [class^=scroller_] [class^=content_] > [class^=channel_]:has(&) [class^=subText_], /* DMs list */
+    [data-list-item-id^="members-"]:has(&) [class^=activity_], /* members list */
+    [data-list-item-id^="private-channels-uid_"]:has(&) [class^=subText_], /* DMs list */
     [class^=peopleListItem_] [class^=userInfo_]:has(&) [class^=subtext_] { /* friends list */
       display: none; 
     } 
@@ -19,7 +19,7 @@
       & div:not([class]) {
         & > [class^=invisibleContainer_],
         & > [class^=visibleContainer_] { 
-        display: none; 
+          display: none; 
         } 
       }
     } 
@@ -27,18 +27,20 @@
     div:not([class]):has([class^=userSection] &) { /* activity tab */
       display: none;
     }
-    [class^=biteSizeInner_]:has(&) [class^=body_], /* popout */
-    [class^=userProfileModalInner_]:has(&) [class^=body_], /* full popout */
-    [class^=userPanelInner_]:has(&) [class^=body_] { /* DMs panel */
-      & [class*=card_] {
-        display: none;
+    [class^=biteSizeInner_]:has(&), /* popout */
+    [class^=userProfileModalInner_]:has(&), /* full popout */
+    [class^=userPanelInner_]:has(&) { /* DMs panel */
+      & [class^=body_] { 
+        & [class*=card_] {
+          display: none;
+        }
       }
     }
     /* active now tab */
     [class^=nowPlayingColumn_] [class^=itemCard_]:has(&) {
-      & header div:not([class]) > div:nth-child(2), /* activity */
-      & header [class^=headerIcon_], /* icon */
-      & [class^=body_] { /* channel */
+      & header div:not([class]) > div:nth-child(2), /* activity name */
+      & header [class^=headerIcon_], /* activity icon */
+      & [class^=body_] { /* channel name */
         display: none;
       }
     }
