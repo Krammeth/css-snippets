@@ -1,6 +1,6 @@
 /**
 * @name StatusHider
-* @version 1.3
+* @version 1.4
 * @description Hides one or more selected users' status
 * @author @Krammeth
 * @website https://github.com/Krammeth
@@ -8,36 +8,25 @@
 
 [src*="ID"] { /* <- copy the [src*="ID"] to add more people */
   [class^=avatarStack_] > & { 
-    [data-list-item-id^="members-"]:has(&) [class^=activity_], /* members list */
-    [data-list-item-id^="private-channels-uid_"]:has(&) [class^=subText_], /* DMs list */
-    [class^=peopleListItem_] [class^=userInfo_]:has(&) [class^=subtext_] { /* friends list */
+    [data-list-item-id^="members-"]:has(&) [class^=subText_], /* members */
+    [data-list-item-id^="private-channels-uid_"]:has(&) [class^=subText_], /* DMs */
+    [class^=peopleListItem_] [class^=userInfo_]:has(&) [class^=subtext_] { /* friends */
       display: none; 
     } 
-    [class^=biteSizeInner_] header:has(&), /* popout */
-    [class^=userProfileModalInner_] header:has(&), /* full popout */
-    [class^=userPanelInner_] header:has(&) { /* DMs panel */
-      & div:not([class]) {
-        & > [class^=invisibleContainer_],
-        & > [class^=visibleContainer_] { 
-          display: none; 
-        } 
-      }
-    } 
-    /* now hides their activities as well */
-    div:not([class]):has([class^=userSection] &) { /* activity tab */
-      display: none;
+    [class^=inner_] header:has(&) { /* popouts & panel */
+      & [class^=referenceContainer_], 
+      & [class^=container_] {
+        display: none; 
+      } 
     }
-    [class^=biteSizeInner_]:has(&), /* popout */
-    [class^=userProfileModalInner_]:has(&), /* full popout */
-    [class^=userPanelInner_]:has(&) { /* DMs panel */
-      & [class^=body_] { 
-        & [class*=card_] {
-          display: none;
-        }
+    /* activities */
+    [class^=inner_]:has(&) { /* popouts & panel */
+      & [class^=body_] [class*=card_] {
+        display: none;
       }
     }
     /* active now tab */
-    [class^=nowPlayingColumn_] [class^=itemCard_]:has(&) {
+    [class^=nowPlayingColumn_] [class^=itemCard_]:has(&) { 
       & header div:not([class]) > div:nth-child(2), /* activity name */
       & header [class^=headerIcon_], /* activity icon */
       & [class^=body_] { /* channel name */
