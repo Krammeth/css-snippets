@@ -1,0 +1,381 @@
+/**
+ * @name Popouts Revamped
+ * @author Krammeth (original by @resucutie, @nyri4)
+ * @description inspired from Couve's
+ * @version 2.0
+*/
+
+.root__24502.root__49fc1.small__49fc1 {
+  width: 800px;
+  height: 400px;
+
+  > .outer_c0bea0,
+  > .profileEffects__01370 {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  > .outer_c0bea0 .inner_c0bea0 {
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px !important;
+
+    > .wrapper_da5890 { /* actions */
+      top: unset;
+      right: calc(50% + 15px);
+      bottom: 11px;
+      gap: 8px;
+
+      .bannerColor_fb7f94 {
+        background: color-mix(in srgb,
+          var(--profile-gradient-primary-color) 10%,
+          var(--profile-gradient-secondary-color) 90%
+        );
+        border-radius: 8px;
+      }
+
+      &:not(:hover) div:not(:last-of-type) {
+        display: none;
+      }
+    }
+
+    > header { /* left side */
+      width: 50%;
+      height: 100%;
+
+      > .mask__68edb {
+        min-width: unset !important;
+        min-height: unset !important;
+        width: 100%;
+        height: 100%;
+
+        > foreignObject {
+          mask: none;
+
+          .banner__68edb {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100% !important;
+            z-index: -1;
+            opacity: 0.6;
+            border-radius: 10px 0 0 10px;
+            -webkit-mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2862745098));
+          }
+        }
+
+        &[viewBox="0 0 600 106"] > foreignObject {
+          y: -350px;
+          height: 800px;
+        }
+
+        &[viewBox="0 0 600 210"] > foreignObject {
+          y: -250px;
+          height: 700px;
+        }
+      }
+
+      > .headerInner__24502 { /* avatar */
+        position: static;
+
+        > .avatar__75742 {
+          top: 16px;
+          left: 16px;
+
+          > .avatarPopover__2d0ab { /* who would even want to react to an avatar? */
+            display: none;
+          }
+        }
+
+        > .addCustomStatusButtonBubble_af9888, /* custom status */
+        > .container_ab8609 {
+          position: absolute;
+          top: unset;
+          left: unset;
+          bottom: 0;
+          right: 0;
+          z-index: 2;
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          flex-wrap: wrap;
+          flex-direction: row;
+          width: 50%;
+          height: 50px;
+          padding: 10px;
+          backdrop-filter: blur(8px);
+          box-sizing: border-box;
+          border-bottom-right-radius: 5px;
+
+          > .outer_ab8609 {
+            border: none;
+            box-shadow: none;
+            background: transparent;
+            min-width: unset;
+            max-width: unset;
+            overflow: unset;
+
+            &::before,
+            &::after {
+              display: none;
+            }
+
+            > .inner_ab8609 {
+              padding: 0;
+              background: transparent;
+
+              > .content_ab8609 {
+                text-align: right;
+              }
+            }
+          }
+
+          > .statusPopover__2d0ab { /* who would even want to react to a status? */
+            display: none;
+          }
+          
+          > .wrapper_f7ecac { /* edit/clear status */
+            background: color-mix(in srgb,
+              var(--profile-gradient-primary-color) 10%,
+              var(--profile-gradient-secondary-color) 90%
+            );
+          }
+        }
+
+        > .headerButtons__24502 { /* bottom left buttons */
+          position: fixed;
+          height: 32px;
+          bottom: 15px;
+          left: 15px;
+          z-index: 1;
+
+          > .container__9e42c > div > .button__201d5, /* message */
+          > .container__9e42c > .button__201d5 { /* add friend */
+            background: color-mix(in srgb,
+              var(--profile-gradient-primary-color) 10%,
+              var(--profile-gradient-secondary-color) 90%
+            );
+          }
+        }
+      }
+    }
+
+    > .body__24502 { /* right side */
+      width: 50%;
+      margin: 0;
+      overflow: visible;
+      background-color: transparent;
+      border-radius: 0;
+      position: static;
+      background: transparent;
+      border: none;
+
+      > .container__63ed3 { /* profile info */
+        position: absolute;
+        left: 150px;
+        z-index: 1;
+        max-width: 215px;
+        margin: 15px 15px 0;
+
+        > .usernameRow__63ed3 > .nickname__63ed3 { /* display name */
+          max-height: 60px;
+        }
+
+        > .tags__63ed3 > .container__8061a { /* badges */
+          border: none;
+          background: none;
+        }
+      }
+      
+      > .container_d1d9f3 { /* profile details */
+        height: 100%;
+
+        > .tabBar_d1d9f3 { /* left tabs */
+          position: absolute;
+          bottom: 15%;
+          left: 15px;
+          padding: 0;
+          z-index: 1;
+          border-bottom: unset;
+          flex-direction: column;
+          gap: 8px;
+
+          > .item_b3f026 {
+            height: 20px;
+            border-bottom: unset;
+            margin-left: unset;
+
+            &::after { /* line below tab names */
+              display: none;
+            }
+
+            > div {
+              transition: font-weight 0.2s;
+            }
+
+            &.selected_b3f026 > div {
+              font-weight: bold;
+            }
+          }
+        }
+
+        > .scroller_fcb628 { /* about me scroller */
+          .section_bf424d {
+            &:has(> .note_fcb628) { /* hide notes */
+              display: none;
+            }
+
+            &:has(> .connectedAccounts_e6abe8) { /* fix connections margin */
+              margin-bottom: 50px;
+
+              > .connectedAccounts_e6abe8 > .connectedAccountsColumn_e6abe8 {
+                > .connectedAccountContainer_e6abe8 { /* connections */
+                  border: none;
+                  padding: 8px 8px;
+                  border-radius: 8px;
+                  position: relative;
+                  background-color: color-mix(in srgb,
+                    var(--profile-gradient-primary-color) 50%,
+                    var(--profile-gradient-secondary-color) 50%
+                  );
+    
+                  > .connectedAccount_e6abe8 > .connectedAccountNameContainer_e6abe8 > .connectedAccountName_e6abe8 { /* remove verified & arrow */
+                    > .connectedAccountNameTextContainer_e6abe8 > .flowerStarContainer__3e3b0 {
+                      display: none;
+                    }
+
+                    > .anchor_edefb8 { /* clickable account */
+                      position: absolute;
+                      inset: 0;
+                      opacity: 0;
+                    }
+                  }
+                }
+
+                > .connectedAccountContainerWithMetadata_e6abe8 {
+                  &:not(:hover) > .connectedAccount_e6abe8 > .connectedAccountNameContainer_e6abe8 { /* collapse details */
+                    > .text-xs\/normal_cf4812,
+                    > .connectedAccountChildren_e6abe8 {
+                      display: none;
+                    }
+                  }
+
+                  > .connectedAccount_e6abe8 > .connectedAccountNameContainer_e6abe8 > .connectedAccountChildren_e6abe8 { /* fix details */
+                    position: relative;
+                    padding: 0px 5px 9px;
+                    margin: unset;
+                    border-radius: 4px;
+                    background-color: color-mix(in srgb,
+                      var(--profile-gradient-primary-color) 50%,
+                      var(--profile-gradient-secondary-color) 50%
+                    );
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        > .scroller_ac477d { /* activity scroller */
+          .section_bf424d {
+            &:nth-of-type(2) { /* hide recent activity */
+              display: none;
+            }
+            margin-bottom: 50px;
+
+            .card__39ec2 {
+              &:has(> .header__39ec2 > .headerText__39ec2 > .platformIcon__39ec2[style="mask-image: url(\"/assets/f6833ce4dd20c1fb.svg\");"]) { 
+                order: -1; /* force spotify as top activity */
+        
+                > .body__39ec2 .actions__39ec2 { /* hide buttons */
+                  display: none;
+                }
+
+                &:hover > .body__39ec2 > .content__39ec2 > .actions__39ec2 { /* move buttons */
+                  display: flex;
+                  position: absolute;
+                  top: 8px;
+                  right: 8px;
+
+                  > .primaryButton__39ec2 {
+                    width: 32px;
+
+                    > .primary_fb7f94 {
+                      min-width: unset;
+                      width: 32px;
+                      background: color-mix(in srgb,
+                        var(--profile-gradient-primary-color) 90%,
+                        var(--profile-gradient-secondary-color) 10%
+                      );
+                      padding: 2px;
+
+                      > .contents__201d5 {
+                        font-size: 0;
+                        margin: 0;
+                        margin-left: 4px;
+                      }
+                    }
+                  }
+
+                  > div > .primary_fb7f94 {
+                    background: color-mix(in srgb,
+                      var(--profile-gradient-primary-color) 90%,
+                      var(--profile-gradient-secondary-color) 10%
+                    );
+                  }
+                }
+              }
+            }
+
+            .activityPopover__2d0ab { /* who would even want to react to an activity? */
+              display: none;
+            }
+          }
+        }
+
+        > .listScroller__9d78f { /* mutuals scroller */
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: repeat(20, 0fr);
+          gap: 10px;
+          padding: 12px !important;
+          margin: 0;
+
+          > .row__89036, /* mutual friends */
+          > .row__0a95c { /* mutual servers */
+            position: relative;
+            z-index: 1;
+            height: 44px;
+            margin: 0;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: rgba(255, 255, 255, 0.0274509804);
+          }
+
+          .empty__9d78f { /* no mutuals */
+            grid-column: 1/3;
+            grid-row: 1/22;
+            position: relative;
+            z-index: 0;
+            overflow: hidden;
+            margin: 0;
+
+            .emptyIconFriends__9d78f {
+              position: absolute;
+              z-index: -1;
+              width: 80%;
+              height: 80%;
+              opacity: 0.2;
+              background-size: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
