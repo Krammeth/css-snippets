@@ -236,7 +236,7 @@
 
               > .connectedAccounts_e6abe8 > .connectedAccountsColumn_e6abe8 {
                 > .connectedAccountContainer_e6abe8 { /* connections */
-                  border: none;
+                  border: 1px solid var(--opacity-white-8);
                   padding: 8px 8px;
                   border-radius: 8px;
                   position: relative;
