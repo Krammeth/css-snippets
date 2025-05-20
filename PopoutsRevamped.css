@@ -248,13 +248,19 @@
                   border-radius: 8px;
                   position: relative;
                   background-color: color-mix(in srgb,
-                    var(--profile-gradient-primary-color) 50%,
-                    var(--profile-gradient-secondary-color) 50%
+                    var(--profile-gradient-primary-color) 20%,
+                    var(--profile-gradient-secondary-color) 80%
                   );
     
                   > .connectedAccount_e6abe8 > .connectedAccountNameContainer_e6abe8 > .connectedAccountName_e6abe8 { /* remove verified & arrow */
-                    > .connectedAccountNameTextContainer_e6abe8 > .flowerStarContainer__3e3b0 {
-                      display: none;
+                    > .connectedAccountNameTextContainer_e6abe8 {
+                      > .connectedAccountNameText_e6abe8 {
+                        text-shadow: 0px 0px 4px black;
+                      }
+
+                      > .flowerStarContainer__3e3b0 {
+                        display: none;
+                      } 
                     }
 
                     > .anchor_edefb8 { /* clickable account */
@@ -276,14 +282,19 @@
                     display: none;
                   }
 
+                  > .connectedAccount_e6abe8 > .connectedAccountNameContainer_e6abe8 > .text-xs\/normal_cf4812,
+                  > .connectedAccountChildren_e6abe8 > .text-xs\/normal_cf4812 {
+                    text-shadow: 0px 0px 4px black;
+                  }
+
                   > .connectedAccount_e6abe8 > .connectedAccountNameContainer_e6abe8 > .connectedAccountChildren_e6abe8 { /* fix details */
                     position: relative;
                     padding: 0px 5px 9px;
                     margin: unset;
                     border-radius: 4px;
                     background-color: color-mix(in srgb,
-                      var(--profile-gradient-primary-color) 50%,
-                      var(--profile-gradient-secondary-color) 50%
+                      var(--profile-gradient-primary-color) 20%,
+                      var(--profile-gradient-secondary-color) 80%
                     );
                   }
                 }
