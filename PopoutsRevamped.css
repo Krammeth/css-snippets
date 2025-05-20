@@ -107,7 +107,7 @@
           flex-wrap: wrap;
           flex-direction: row;
           width: 50%;
-          height: 50px;
+          height: unset;
           padding: 10px;
           backdrop-filter: blur(15px);
           box-sizing: border-box;
@@ -190,6 +190,10 @@
         > .tags__63ed3 {
           > span:has(> .chipletContainerInner__10651) { /* move clan tag before username */
             order: -1;
+          }
+
+          > .pronounsTooltip__63ed3 > .pronounsText__63ed3 {
+            white-space: unset;
           }
 
           > .container__8061a { /* badges */
