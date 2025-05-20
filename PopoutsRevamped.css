@@ -109,7 +109,7 @@
           width: 50%;
           height: 50px;
           padding: 10px;
-          backdrop-filter: blur(8px);
+          backdrop-filter: blur(15px);
           box-sizing: border-box;
           border-bottom-right-radius: 5px;
 
