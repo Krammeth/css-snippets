@@ -187,10 +187,16 @@
           max-height: 60px;
         }
 
-        > .tags__63ed3 > .container__8061a { /* badges */
-          position: relative;
-          border: none;
-          background: none;
+        > .tags__63ed3 {
+          > span:has(> .chipletContainerInner__10651) { /* move clan tag before username */
+            order: -1;
+          }
+
+          > .container__8061a { /* badges */
+            position: relative;
+            border: none;
+            background: none;
+          }
         }
       }
       
