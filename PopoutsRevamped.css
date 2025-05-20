@@ -188,6 +188,7 @@
         }
 
         > .tags__63ed3 > .container__8061a { /* badges */
+          position: relative;
           border: none;
           background: none;
         }
