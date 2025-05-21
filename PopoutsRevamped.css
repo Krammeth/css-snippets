@@ -41,7 +41,7 @@
         color: var(--button-secondary-text);
 
         > .contents__201d5 > svg > path {
-          -webkit-filter: drop-shadow(0px 0px 4px black);
+          -webkit-filter: drop-shadow(0px 0px 1px black);
         }
       }
 
@@ -170,7 +170,7 @@
             );
 
             > .contents__201d5 {
-              -webkit-filter: drop-shadow(0px 0px 4px black);
+              -webkit-filter: drop-shadow(0px 0px 1px black);
             }
           }
         }
@@ -258,7 +258,7 @@
               );
 
               > div {
-                -webkit-filter: drop-shadow(0px 0px 4px black);
+                -webkit-filter: drop-shadow(0px 0px 1px black);
               }
             }
 
@@ -279,7 +279,7 @@
                   > .connectedAccount_e6abe8 > .connectedAccountNameContainer_e6abe8 > .connectedAccountName_e6abe8 { /* remove verified & arrow */
                     > .connectedAccountNameTextContainer_e6abe8 {
                       > .connectedAccountNameText_e6abe8 {
-                        -webkit-filter: drop-shadow(0px 0px 4px black);
+                        -webkit-filter: drop-shadow(0px 0px 1px black);
                       }
 
                       > .flowerStarContainer__3e3b0 {
@@ -308,7 +308,7 @@
 
                   > .connectedAccount_e6abe8 > .connectedAccountNameContainer_e6abe8 > .text-xs\/normal_cf4812,
                   > .connectedAccountChildren_e6abe8 > .connectedAccountVanityMetadata_fffe42 {
-                    -webkit-filter: drop-shadow(0px 0px 4px black);
+                    -webkit-filter: drop-shadow(0px 0px 1px black);
                   }
 
                   > .connectedAccount_e6abe8 > .connectedAccountNameContainer_e6abe8 > .connectedAccountChildren_e6abe8 { /* fix details */
