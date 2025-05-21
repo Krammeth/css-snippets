@@ -15,6 +15,7 @@
     height: 100%;
     box-sizing: border-box;
     padding: 4px;
+    background: none;
   }
   
   > .outer_c0bea0 > .inner_c0bea0 {
@@ -37,6 +38,11 @@
           var(--profile-gradient-secondary-color) 90%
         );
         border-radius: 8px;
+        color: var(--button-secondary-text);
+
+        > .contents__201d5 > svg > path {
+          -webkit-filter: drop-shadow(0px 0px 4px black);
+        }
       }
 
       &:not(:hover) div:not(:last-of-type) {
@@ -51,7 +57,7 @@
       > .mask__68edb {
         min-width: unset !important;
         min-height: unset !important;
-        width: 100%;
+        width: 200%;
         height: 100%;
 
         &[viewBox="0 0 600 106"] > foreignObject {
@@ -71,7 +77,7 @@
             position: absolute;
             top: 0;
             left: 0;
-            width: 100%;
+            max-width: 792px;
             height: 100% !important;
             z-index: -1;
             opacity: 0.6;
@@ -111,7 +117,8 @@
           padding: 10px;
           backdrop-filter: blur(15px);
           box-sizing: border-box;
-          border-bottom-right-radius: 5px;
+          border-bottom-right-radius: 8px;
+          border-top-left-radius: 8px;
 
           > .outer_ab8609 {
             border: none;
@@ -161,6 +168,10 @@
               var(--profile-gradient-primary-color) 10%,
               var(--profile-gradient-secondary-color) 90%
             );
+
+            > .contents__201d5 {
+              -webkit-filter: drop-shadow(0px 0px 4px black);
+            }
           }
         }
       }
@@ -170,10 +181,9 @@
       width: 50%;
       margin: 0;
       overflow: visible;
-      background-color: transparent;
       border-radius: 0;
       position: static;
-      background: transparent;
+      background: none;
       border: none;
 
       > .container__63ed3 { /* profile info */
@@ -206,6 +216,7 @@
       
       > .container_d1d9f3 { /* profile details */
         height: 100%;
+        background: none;
 
         > .tabBar_d1d9f3 { /* left tabs */
           position: absolute;
@@ -237,9 +248,18 @@
         }
 
         > .scroller_fcb628 { /* about me scroller */
+          background: none;
+
           .section_bf424d {
-            &:has(> .note_fcb628) { /* hide notes */
-              display: none;
+            > .root_af8192 > .role_dfa8b6 { /* roles */
+              background-color: color-mix(in srgb,
+                var(--profile-gradient-primary-color) 20%,
+                var(--profile-gradient-secondary-color) 80%
+              );
+
+              > div {
+                -webkit-filter: drop-shadow(0px 0px 4px black);
+              }
             }
 
             &:has(> .connectedAccounts_e6abe8) { /* fix connections margin */
@@ -247,7 +267,7 @@
 
               > .connectedAccounts_e6abe8 > .connectedAccountsColumn_e6abe8 {
                 > .connectedAccountContainer_e6abe8 { /* connections */
-                  border: 1px solid var(--opacity-white-8);
+                  border: 1px solid var(--user-profile-border);
                   padding: 8px 8px;
                   border-radius: 8px;
                   position: relative;
@@ -259,7 +279,7 @@
                   > .connectedAccount_e6abe8 > .connectedAccountNameContainer_e6abe8 > .connectedAccountName_e6abe8 { /* remove verified & arrow */
                     > .connectedAccountNameTextContainer_e6abe8 {
                       > .connectedAccountNameText_e6abe8 {
-                        text-shadow: 0px 0px 4px black;
+                        -webkit-filter: drop-shadow(0px 0px 4px black);
                       }
 
                       > .flowerStarContainer__3e3b0 {
@@ -287,8 +307,8 @@
                   }
 
                   > .connectedAccount_e6abe8 > .connectedAccountNameContainer_e6abe8 > .text-xs\/normal_cf4812,
-                  > .connectedAccountChildren_e6abe8 > .text-xs\/normal_cf4812 {
-                    text-shadow: 0px 0px 4px black;
+                  > .connectedAccountChildren_e6abe8 > .connectedAccountVanityMetadata_fffe42 {
+                    -webkit-filter: drop-shadow(0px 0px 4px black);
                   }
 
                   > .connectedAccount_e6abe8 > .connectedAccountNameContainer_e6abe8 > .connectedAccountChildren_e6abe8 { /* fix details */
@@ -303,6 +323,10 @@
                   }
                 }
               }
+            }
+
+            &:has(> .note_fcb628) { /* hide notes */
+              display: none;
             }
           }
         }
