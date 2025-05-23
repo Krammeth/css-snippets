@@ -1,0 +1,65 @@
+/**
+ * @name PRAddon (Status Bar)
+ * @author Krammeth
+ * @version 1.0
+*/
+
+@container style(--status-enabled:true) {
+  .root__24502.root__49fc1.small__49fc1 > .outer_c0bea0 > .inner_c0bea0 > header > .headerInner__24502 {
+    > .addCustomStatusButtonBubble_af9888, /* custom status */
+    > .container_ab8609 {
+      position: absolute;
+      top: unset;
+      left: unset;
+      bottom: 0;
+      right: 0;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+      flex-direction: row;
+      width: 50%;
+      height: unset;
+      padding: 10px;
+      backdrop-filter: blur(15px);
+      box-sizing: border-box;
+      border-bottom-right-radius: 8px;
+      border-top-left-radius: 8px;
+
+      > .outer_ab8609 {
+        border: none;
+        box-shadow: none;
+        background: transparent;
+        min-width: unset;
+        max-width: unset;
+        overflow: unset;
+
+        &::before,
+        &::after {
+          display: none;
+        }
+
+        > .inner_ab8609 {
+          padding: 0;
+          background: transparent;
+
+          > .content_ab8609 { /* actual text */
+            text-align: center;
+          }
+        }
+      }
+
+      > .statusPopover__2d0ab { /* who would even want to react to a status? */
+        display: none;
+      }
+          
+      > .wrapper_f7ecac { /* edit/clear status */
+        background: color-mix(in srgb,
+          var(--profile-gradient-primary-color) 10%,
+          var(--profile-gradient-secondary-color) 90%
+        );
+      }
+    }
+  }
+}
