@@ -5,6 +5,8 @@
  * @version 2.0
 */
 
+@import url('https://raw.githubusercontent.com/Krammeth/css-snippets/refs/heads/main/PRA-StatusBar.css');
+
 .root__24502.root__49fc1.small__49fc1 {
   width: 800px;
   height: 400px;
@@ -15,7 +17,6 @@
     height: 100%;
     box-sizing: border-box;
     padding: 4px;
-    background: none;
   }
   
   > .outer_c0bea0 > .inner_c0bea0 {
@@ -34,8 +35,8 @@
 
       .bannerColor_fb7f94 {
         background: color-mix(in srgb,
-          var(--profile-gradient-primary-color) 10%,
-          var(--profile-gradient-secondary-color) 90%
+          rgba(0, 0, 0, 0.1) 50%,
+          var(--profile-gradient-secondary-color) 50%
         );
         border-radius: 8px;
         color: var(--button-secondary-text);
@@ -75,14 +76,15 @@
 
           .banner__68edb {
             position: absolute;
-            top: 0;
+            top: 5px;
             left: 0;
             max-width: 792px;
             height: 100% !important;
+            background-size: 141%; /* thanks jintenzo for the fix */
             z-index: -1;
             opacity: 0.6;
             border-radius: 10px 0 0 10px;
-            -webkit-mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2862745098));
+            -webkit-mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.29));
           }
         }
       }
@@ -101,45 +103,42 @@
 
         > .addCustomStatusButtonBubble_af9888, /* custom status */
         > .container_ab8609 {
-          position: absolute;
-          top: unset;
-          left: unset;
-          bottom: 0;
-          right: 0;
+          top: 150px;
+          left: 150px;
           z-index: 2;
-          display: flex;
-          justify-content: center;
-          align-content: center;
-          flex-wrap: wrap;
-          flex-direction: row;
-          width: 50%;
-          height: unset;
-          padding: 10px;
-          backdrop-filter: blur(15px);
-          box-sizing: border-box;
-          border-bottom-right-radius: 8px;
-          border-top-left-radius: 8px;
+          height: fit-content;
+          width: fit-content;
 
           > .outer_ab8609 {
-            border: none;
-            box-shadow: none;
             background: transparent;
-            min-width: unset;
-            max-width: unset;
             overflow: unset;
 
-            &::before,
+            &::before {
+              top: -5px;
+              left: -25px;
+              pointer-events: none;
+              background: color-mix(in srgb,
+              rgba(0, 0, 0, 0.1) 50%,
+                var(--profile-gradient-secondary-color) 50%
+              );
+            }
+
             &::after {
-              display: none;
+              top: -10px;
+              left: -40px;
+              pointer-events: none;
+              background: color-mix(in srgb,
+              rgba(0, 0, 0, 0.1) 50%,
+                var(--profile-gradient-secondary-color) 50%
+              );
             }
 
             > .inner_ab8609 {
-              padding: 0;
-              background: transparent;
-
-              > .content_ab8609 { /* actual text */
-                text-align: center;
-              }
+              background: color-mix(in srgb,
+              rgba(0, 0, 0, 0.1) 50%,
+                var(--profile-gradient-secondary-color) 50%
+              );
+              border-radius: 16px !important;
             }
           }
 
@@ -149,8 +148,8 @@
           
           > .wrapper_f7ecac { /* edit/clear status */
             background: color-mix(in srgb,
-              var(--profile-gradient-primary-color) 10%,
-              var(--profile-gradient-secondary-color) 90%
+            rgba(0, 0, 0, 0.1) 50%,
+              var(--profile-gradient-secondary-color) 50%
             );
           }
         }
@@ -165,8 +164,8 @@
           > .container__9e42c > div > .button__201d5, /* message */
           > .container__9e42c > .button__201d5 { /* add friend/edit profile */
             background: color-mix(in srgb,
-              var(--profile-gradient-primary-color) 10%,
-              var(--profile-gradient-secondary-color) 90%
+            rgba(0, 0, 0, 0.1) 50%,
+              var(--profile-gradient-secondary-color) 50%
             );
 
             > .contents__201d5 {
@@ -191,19 +190,44 @@
         left: 150px;
         z-index: 1;
         max-width: 215px;
+        width: 215px;
         margin: 15px 15px 0;
 
-        > .usernameRow__63ed3 > .nickname__63ed3 { /* display name */
-          max-height: 60px;
+        > .usernameRow__63ed3 {
+          justify-content: flex-start;
+
+          > .nickname__63ed3 { /* display name */
+            max-height: 60px;
+          }
         }
 
         > .tags__63ed3 {
-          > span:has(> .chipletContainerInner__10651) { /* move clan tag before username */
-            order: -1;
+          position: absolute;
+          display: flex;
+          align-content: center;
+          flex-direction: row;
+          justify-content: flex-start;
+          width: inherit;
+
+          > .userTag__63ed3 { /* username */
+            position: relative;
           }
 
-          > .pronounsTooltip__63ed3 > .pronounsText__63ed3 {
-            white-space: unset;
+          > .dotSpacer__63ed3 {
+            position: relative;
+          }
+
+          > .pronounsTooltip__63ed3 {
+            position: relative;
+            
+            > .pronounsText__63ed3 {
+              white-space: unset;
+            }
+          }
+
+          > .guildTagContainer__63ed3 {
+            position: relative;
+            order: var(--tag-order);
           }
 
           > .container__8061a { /* badges */
@@ -251,18 +275,38 @@
           background: none;
 
           .section_bf424d {
-            > .root_af8192 > .role_dfa8b6 { /* roles */
-              background-color: color-mix(in srgb,
-                var(--profile-gradient-primary-color) 20%,
-                var(--profile-gradient-secondary-color) 80%
-              );
+            > .root_af8192 { /* roles */
+              > .role_dfa8b6 { 
+                overflow: hidden;
 
-              > div {
-                -webkit-filter: drop-shadow(0px 0px 1px black);
+                > .roleRemoveButton_dfa8b6,
+                > div > .roleRemoveButton_dfa8b6 {
+                  > .roleCircle__4f569 {
+                    position: relative;
+                    box-shadow: 0px 0px 3px black;
+                    transform-style: preserve-3d;
+
+                    &::after {
+                      position: absolute;
+                      overflow: visible;
+                      background: inherit;
+                      filter: brightness(.7);
+                      content: "";
+                      width: 300px;
+                      height: 24px;
+                      transform: translateZ(-1px);
+                    }
+                  }
+                }
+
+                > span, /* role icon */
+                > .roleName_dfa8b6 { /* role name */
+                  -webkit-filter: drop-shadow(0px 0px 2px black);
+                }
               }
             }
 
-            &:has(> .connectedAccounts_e6abe8) { /* fix connections margin */
+            &:nth-last-of-type(2) { /* fix connections margin */
               margin-bottom: 50px;
 
               > .connectedAccounts_e6abe8 > .connectedAccountsColumn_e6abe8 {
@@ -272,8 +316,8 @@
                   border-radius: 8px;
                   position: relative;
                   background-color: color-mix(in srgb,
-                    var(--profile-gradient-primary-color) 20%,
-                    var(--profile-gradient-secondary-color) 80%
+                  rgba(0, 0, 0, 0.1) 50%,
+                    var(--profile-gradient-secondary-color) 50%
                   );
     
                   > .connectedAccount_e6abe8 > .connectedAccountNameContainer_e6abe8 > .connectedAccountName_e6abe8 { /* remove verified & arrow */
@@ -317,15 +361,15 @@
                     margin: unset;
                     border-radius: 4px;
                     background-color: color-mix(in srgb,
-                      var(--profile-gradient-primary-color) 20%,
-                      var(--profile-gradient-secondary-color) 80%
+                    rgba(0, 0, 0, 0.1) 50%,
+                      var(--profile-gradient-secondary-color) 50%
                     );
                   }
                 }
               }
             }
 
-            &:has(> .note_fcb628) { /* hide notes */
+            &:nth-last-of-type(1) { /* hide notes */
               display: none;
             }
           }
