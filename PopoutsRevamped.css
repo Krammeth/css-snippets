@@ -399,7 +399,7 @@
                   > .primaryButton__39ec2 {
                     width: 32px;
 
-                    > .primary_fb7f94 {
+                    > .button_fb7f94 {
                       min-width: unset;
                       width: 32px;
                       background: color-mix(in srgb,
@@ -416,7 +416,7 @@
                     }
                   }
 
-                  > div > .primary_fb7f94 {
+                  > div:nth-child(2) > .button_fb7f94 {
                     background: color-mix(in srgb,
                       var(--profile-gradient-primary-color) 90%,
                       var(--profile-gradient-secondary-color) 10%
