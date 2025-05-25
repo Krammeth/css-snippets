@@ -35,7 +35,7 @@
 
       .bannerColor_fb7f94 {
         background: color-mix(in srgb,
-          rgba(0, 0, 0, 0.1) 50%,
+          rgb(0 0 0 / .1) 50%,
           var(--profile-gradient-secondary-color) 50%
         );
         border-radius: 8px;
@@ -84,7 +84,7 @@
             z-index: -1;
             opacity: 0.6;
             border-radius: 10px 0 0 10px;
-            -webkit-mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.29));
+            -webkit-mask-image: linear-gradient(90deg, rgb(0 0 0 / .8), rgb(0 0 0 / .29));
           }
         }
       }
@@ -118,7 +118,7 @@
               left: -25px;
               pointer-events: none;
               background: color-mix(in srgb,
-              rgba(0, 0, 0, 0.1) 50%,
+              rgb(0 0 0 / .1) 50%,
                 var(--profile-gradient-secondary-color) 50%
               );
             }
@@ -128,14 +128,14 @@
               left: -40px;
               pointer-events: none;
               background: color-mix(in srgb,
-              rgba(0, 0, 0, 0.1) 50%,
+              rgb(0 0 0 / .1) 50%,
                 var(--profile-gradient-secondary-color) 50%
               );
             }
 
             > .inner_ab8609 {
               background: color-mix(in srgb,
-              rgba(0, 0, 0, 0.1) 50%,
+              rgb(0 0 0 / .1) 50%,
                 var(--profile-gradient-secondary-color) 50%
               );
               border-radius: 16px !important;
@@ -148,7 +148,7 @@
           
           > .wrapper_f7ecac { /* edit/clear status */
             background: color-mix(in srgb,
-            rgba(0, 0, 0, 0.1) 50%,
+            rgb(0 0 0 / .1) 50%,
               var(--profile-gradient-secondary-color) 50%
             );
           }
@@ -164,7 +164,7 @@
           > .container__9e42c > div > .button__201d5, /* message */
           > .container__9e42c > .button__201d5 { /* add friend/edit profile */
             background: color-mix(in srgb,
-            rgba(0, 0, 0, 0.1) 50%,
+            rgb(0 0 0 / .1) 50%,
               var(--profile-gradient-secondary-color) 50%
             );
 
@@ -317,7 +317,7 @@
                   border-radius: 8px;
                   position: relative;
                   background-color: color-mix(in srgb,
-                  rgba(0, 0, 0, 0.1) 50%,
+                  rgb(0 0 0 / .1) 50%,
                     var(--profile-gradient-secondary-color) 50%
                   );
     
@@ -362,7 +362,7 @@
                     margin: unset;
                     border-radius: 4px;
                     background-color: color-mix(in srgb,
-                    rgba(0, 0, 0, 0.1) 50%,
+                    rgb(0 0 0 / .1) 50%,
                       var(--profile-gradient-secondary-color) 50%
                     );
                   }
@@ -449,7 +449,7 @@
             margin: 0;
             border-radius: 8px;
             overflow: hidden;
-            background-color: rgba(255, 255, 255, 0.0274509804);
+            background-color: rgb(255 255 255 / .027);
           }
 
           .empty__9d78f { /* no mutuals */
