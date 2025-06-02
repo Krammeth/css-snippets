@@ -2,7 +2,7 @@
  * @name Popouts Revamped
  * @author Krammeth (original by @resucutie, @nyri4)
  * @description inspired from Couve's
- * @version 2.0
+ * @version 2.1
 */
 
 @import url('https://raw.githubusercontent.com/Krammeth/css-snippets/refs/heads/main/PRA-StatusBar.css');
@@ -39,7 +39,7 @@
           var(--profile-gradient-secondary-color) 50%
         );
         border-radius: 8px;
-        color: var(--button-secondary-text);
+        color: var(--white-500);
 
         > .contents__201d5 > svg > path {
           -webkit-filter: drop-shadow(0px 0px 1px black);
@@ -174,6 +174,7 @@
             rgb(0 0 0 / .1) 50%,
               var(--profile-gradient-secondary-color) 50%
             );
+            color: var(--white-500);
 
             > .contents__201d5 {
               -webkit-filter: drop-shadow(0px 0px 1px black);
@@ -327,8 +328,6 @@
             }
 
             &:nth-last-of-type(2) { /* fix connections margin */
-              margin-bottom: 50px;
-
               > .connectedAccounts_e6abe8 > .connectedAccountsColumn_e6abe8 {
                 > .connectedAccountContainer_e6abe8 { /* connections */
                   border: 1px solid var(--user-profile-border);
@@ -343,6 +342,7 @@
                   > .connectedAccount_e6abe8 > .connectedAccountNameContainer_e6abe8 > .connectedAccountName_e6abe8 { /* remove verified & arrow */
                     > .connectedAccountNameTextContainer_e6abe8 {
                       > .connectedAccountNameText_e6abe8 {
+                        color: var(--white-500) !important;
                         -webkit-filter: drop-shadow(0px 0px 1px black);
                       }
 
@@ -372,7 +372,12 @@
 
                   > .connectedAccount_e6abe8 > .connectedAccountNameContainer_e6abe8 > .text-xs\/normal_cf4812,
                   > .connectedAccountChildren_e6abe8 > .connectedAccountVanityMetadata_fffe42 {
+                    color: var(--white-500) !important;
                     -webkit-filter: drop-shadow(0px 0px 1px black);
+
+                    > .text-xs\/normal_cf4812 {
+                      color: var(--white-500) !important;
+                    }
                   }
 
                   > .connectedAccount_e6abe8 > .connectedAccountNameContainer_e6abe8 > .connectedAccountChildren_e6abe8 { /* fix details */
@@ -389,8 +394,16 @@
               }
             }
 
-            &:nth-last-of-type(1) { /* hide notes */
-              display: none;
+            @container style(--show-notes:false) {
+              &:nth-last-of-type(1) { /* hide notes */
+                display: none;
+              }
+            }
+
+            @container style(--show-notes:true) {
+              &:nth-last-of-type(1) {
+                display: unset;
+              }
             }
           }
         }
