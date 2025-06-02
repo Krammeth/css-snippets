@@ -1,12 +1,13 @@
 /**
  * @name PRAddon (Status Bar)
  * @author Krammeth
- * @version 1.0
+ * @version 1.1
 */
 
-@container style(--status-enabled:true) {
-  .root__24502.root__49fc1.small__49fc1 > .outer_c0bea0 > .inner_c0bea0 {
-    > header > .headerInner__24502 {
+
+.root__24502.root__49fc1.small__49fc1 > .outer_c0bea0 > .inner_c0bea0 {
+  > header > .headerInner__24502 {
+    @container style(--status-enabled:true) {
       > .addCustomStatusButtonBubble_af9888, /* custom status */
       > .container_ab8609 {
         position: absolute !important;
@@ -63,15 +64,17 @@
         }
       }
     }
+  }
 
+  > .body__24502 .scroller_fcb628 .section_bf424d {
     @container style(--show-notes:true) {
-      > .body__24502 > .scroller_fcb628 .section_bf424d:nth-last-of-type(1) { /* fix notes bottom margin */
+      &:nth-last-of-type(1) { /* fix notes bottom margin */
         margin-bottom: 50px;
       }
     }
-
+      
     @container style(--show-notes:false) {
-      > .body__24502 > .scroller_fcb628 .section_bf424d:nth-last-of-type(2) { /* fix connections bottom margin */
+      &:nth-last-of-type(2) { /* fix connections bottom margin */
         margin-bottom: 50px;
       }
     }
