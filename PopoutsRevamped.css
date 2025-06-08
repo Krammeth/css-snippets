@@ -295,38 +295,6 @@
           background: none;
 
           .section_bf424d {
-            > .root_af8192 { /* roles */
-              > .role_dfa8b6 { 
-                overflow: hidden;
-
-                > .roleRemoveButton_dfa8b6,
-                > div > .roleRemoveButton_dfa8b6 {
-                  > .roleCircle__4f569 {
-                    position: relative;
-                    box-shadow: 0px 0px 3px black;
-                    transform-style: preserve-3d;
-
-                    &::after {
-                      position: absolute;
-                      left: -10px;
-                      overflow: visible;
-                      background: inherit;
-                      filter: brightness(.7);
-                      content: "";
-                      width: 400px;
-                      height: 24px;
-                      transform: translateZ(-1px);
-                    }
-                  }
-                }
-
-                > span, /* role icon */
-                > .roleName_dfa8b6 { /* role name */
-                  -webkit-filter: drop-shadow(0px 0px 2px black);
-                }
-              }
-            }
-
             &:nth-last-of-type(2) { /* fix connections margin */
               > .connectedAccounts_e6abe8 > .connectedAccountsColumn_e6abe8 {
                 > .connectedAccountContainer_e6abe8 { /* connections */
