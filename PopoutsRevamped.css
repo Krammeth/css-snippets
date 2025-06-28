@@ -169,7 +169,10 @@
           left: 15px;
           z-index: 1;
 
-          > .container__9e42c > div > .button__201d5, /* message */
+          > .container__9e42c > div > .button__201d5, /* DM */
+          > .messageTextButton__24502, /* DM bot */
+          > .messageIconButton__24502 > .lookFilled__201d5, /* smaller DM bot */
+          > .sizeSmall__201d5, /* add app */
           > .container__9e42c > .button__201d5 { /* add friend/edit profile */
             background: color-mix(in srgb,
             rgb(0 0 0 / .1) 50%,
@@ -223,7 +226,7 @@
         }
 
         > .tags__63ed3 {
-          position: absolute;
+          position: relative;
           display: flex;
           align-content: center;
           flex-direction: row;
