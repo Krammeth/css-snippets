@@ -1,0 +1,49 @@
+/**
+ * @name CRT Screen Effect
+ * @author Krammeth
+ * @description will need this later
+ * @version 1.0
+*/
+
+/* control panel */
+:root { 
+  --crt: off;
+  --crt-transparency: 0.2;
+  --crt-speed: 5s;
+  --crt-blur: 0.8px;
+}
+
+/* control panel */
+@container style(--crt: on) {
+  body::after {
+    /* element */
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 999;
+    pointer-events: none;
+
+    /* background */
+    background: linear-gradient(
+      to top, 
+      rgb(0 0 0 / var(--crt-transparency)), 
+      rgb(0 0 0 / var(--crt-transparency)), 
+      rgb(255 255 255 / var(--crt-transparency)), 
+      rgb(255 255 255 / var(--crt-transparency))
+    );
+    background-size: 100% 1px, cover;
+    filter: blur(var(--crt-blur));
+
+    /* animation */
+    animation: scanlines infinite var(--crt-speed) linear;
+  } 
+  @keyframes scanlines {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 0 -10px;
+    }
+  }
+}
