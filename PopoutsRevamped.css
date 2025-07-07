@@ -88,7 +88,10 @@
             z-index: -1;
             opacity: 0.6;
             border-radius: 10px 0 0 10px;
-            -webkit-mask-image: linear-gradient(90deg, rgb(0 0 0 / .8), rgb(0 0 0 / .29));
+            -webkit-mask-image: linear-gradient(90deg, 
+              rgb(0 0 0 / .8), 
+              rgb(0 0 0 / .29)
+            );
 
             @container style(--background-width:full) {
               background-size: 141%; /* thanks jintenzo for the fix */
@@ -126,7 +129,7 @@
               left: -25px;
               pointer-events: none;
               background: color-mix(in srgb,
-              rgb(0 0 0 / .1) 50%,
+                rgb(0 0 0 / .1) 50%,
                 var(--profile-gradient-secondary-color) 50%
               );
             }
@@ -136,14 +139,14 @@
               left: -40px;
               pointer-events: none;
               background: color-mix(in srgb,
-              rgb(0 0 0 / .1) 50%,
+                rgb(0 0 0 / .1) 50%,
                 var(--profile-gradient-secondary-color) 50%
               );
             }
 
             > .inner_ab8609 {
               background: color-mix(in srgb,
-              rgb(0 0 0 / .1) 50%,
+                rgb(0 0 0 / .1) 50%,
                 var(--profile-gradient-secondary-color) 50%
               );
               border-radius: 16px !important;
@@ -156,7 +159,7 @@
           
           > .wrapper_f7ecac { /* edit/clear status */
             background: color-mix(in srgb,
-            rgb(0 0 0 / .1) 50%,
+              rgb(0 0 0 / .1) 50%,
               var(--profile-gradient-secondary-color) 50%
             );
           }
@@ -175,7 +178,7 @@
           > .sizeSmall__201d5, /* add app */
           > .container__9e42c > .button__201d5 { /* add friend/edit profile */
             background: color-mix(in srgb,
-            rgb(0 0 0 / .1) 50%,
+              rgb(0 0 0 / .1) 50%,
               var(--profile-gradient-secondary-color) 50%
             );
             color: var(--white-500);
@@ -199,11 +202,11 @@
       @container style(--right-gradient:true) {
         background: linear-gradient(180deg, 
           color-mix(in srgb,
-          rgb(0 0 0 / .1) 50%,
+            rgb(0 0 0 / .1) 50%,
             var(--profile-gradient-primary-color) 50%
           ),
           color-mix(in srgb,
-          rgb(0 0 0 / .1) 50%,
+            rgb(0 0 0 / .1) 50%,
             var(--profile-gradient-secondary-color) 50%
           )
         );
@@ -307,7 +310,7 @@
                   border-radius: 8px;
                   position: relative;
                   background-color: color-mix(in srgb,
-                  rgb(0 0 0 / .1) 50%,
+                    rgb(0 0 0 / .1) 50%,
                     var(--profile-gradient-secondary-color) 50%
                   );
     
@@ -358,7 +361,7 @@
                     margin: unset;
                     border-radius: 4px;
                     background-color: color-mix(in srgb,
-                    rgb(0 0 0 / .1) 50%,
+                      rgb(0 0 0 / .1) 50%,
                       var(--profile-gradient-secondary-color) 50%
                     );
                   }
