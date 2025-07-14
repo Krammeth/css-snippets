@@ -88,10 +88,7 @@
             z-index: -1;
             opacity: 0.6;
             border-radius: 10px 0 0 10px;
-            -webkit-mask-image: linear-gradient(90deg, 
-              rgb(0 0 0 / .8), 
-              rgb(0 0 0 / .29)
-            );
+            -webkit-mask-image: linear-gradient(90deg, rgb(0 0 0 / .8), rgb(0 0 0 / .29));
 
             @container style(--background-width:full) {
               background-size: 141%; /* thanks jintenzo for the fix */
@@ -129,7 +126,7 @@
               left: -25px;
               pointer-events: none;
               background: color-mix(in srgb,
-                rgb(0 0 0 / .1) 50%,
+              rgb(0 0 0 / .1) 50%,
                 var(--profile-gradient-secondary-color) 50%
               );
             }
@@ -139,14 +136,14 @@
               left: -40px;
               pointer-events: none;
               background: color-mix(in srgb,
-                rgb(0 0 0 / .1) 50%,
+              rgb(0 0 0 / .1) 50%,
                 var(--profile-gradient-secondary-color) 50%
               );
             }
 
             > .inner_ab8609 {
               background: color-mix(in srgb,
-                rgb(0 0 0 / .1) 50%,
+              rgb(0 0 0 / .1) 50%,
                 var(--profile-gradient-secondary-color) 50%
               );
               border-radius: 16px !important;
@@ -159,7 +156,7 @@
           
           > .wrapper_f7ecac { /* edit/clear status */
             background: color-mix(in srgb,
-              rgb(0 0 0 / .1) 50%,
+            rgb(0 0 0 / .1) 50%,
               var(--profile-gradient-secondary-color) 50%
             );
           }
@@ -178,7 +175,7 @@
           > .sizeSmall__201d5, /* add app */
           > .container__9e42c > .button__201d5 { /* add friend/edit profile */
             background: color-mix(in srgb,
-              rgb(0 0 0 / .1) 50%,
+            rgb(0 0 0 / .1) 50%,
               var(--profile-gradient-secondary-color) 50%
             );
             color: var(--white-500);
@@ -202,11 +199,11 @@
       @container style(--right-gradient:true) {
         background: linear-gradient(180deg, 
           color-mix(in srgb,
-            rgb(0 0 0 / .1) 50%,
+          rgb(0 0 0 / .1) 50%,
             var(--profile-gradient-primary-color) 50%
           ),
           color-mix(in srgb,
-            rgb(0 0 0 / .1) 50%,
+          rgb(0 0 0 / .1) 50%,
             var(--profile-gradient-secondary-color) 50%
           )
         );
@@ -305,12 +302,12 @@
             &:nth-last-of-type(2) { /* fix connections margin */
               > .connectedAccounts_e6abe8 > .connectedAccountsColumn_e6abe8 {
                 > .connectedAccountContainer_e6abe8 { /* connections */
-                  border: 1px solid var(--user-profile-border);
+                  outline: 1px solid var(--user-profile-border);
                   padding: 8px 8px;
                   border-radius: 8px;
                   position: relative;
                   background-color: color-mix(in srgb,
-                    rgb(0 0 0 / .1) 50%,
+                  rgb(0 0 0 / .1) 50%,
                     var(--profile-gradient-secondary-color) 50%
                   );
     
@@ -329,7 +326,12 @@
                     > .anchor_edefb8 { /* clickable account */
                       position: absolute;
                       inset: 0;
-                      opacity: 0;
+                      border-radius: 8px;
+                      height: 100%;
+
+                      > .connectedAccountOpenIcon_e6abe8 {
+                        display: none;
+                      }
                     }
                   }
                 }
@@ -349,6 +351,7 @@
                   > .connectedAccountChildren_e6abe8 > .connectedAccountVanityMetadata_fffe42 {
                     color: var(--white-500) !important;
                     -webkit-filter: drop-shadow(0px 0px 1px black);
+                    pointer-events: none;
 
                     > .text-xs\/normal_cf4812 {
                       color: var(--white-500) !important;
@@ -361,7 +364,7 @@
                     margin: unset;
                     border-radius: 4px;
                     background-color: color-mix(in srgb,
-                      rgb(0 0 0 / .1) 50%,
+                    rgb(0 0 0 / .1) 50%,
                       var(--profile-gradient-secondary-color) 50%
                     );
                   }
