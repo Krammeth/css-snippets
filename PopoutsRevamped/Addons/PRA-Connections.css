@@ -4,256 +4,261 @@
  * @version 2.0
 */
 
+@container style(connections:true) {
+
 /* w/o shadows */
-.connectedAccountContainer_e6abe8:hover > .connectedAccount_e6abe8 { 
-  .connectedAccountName_e6abe8 > .anchor_edefb8 { /* connections w/ links */
+  .connectedAccountContainer_e6abe8:hover > .connectedAccount_e6abe8 { 
+    .connectedAccountName_e6abe8 > .anchor_edefb8 { /* connections w/ links */
     
-    &[href^="https://bsky.app/profile/"] { /* Bluesky */
-      outline: 3px solid #1185fe;
+      &[href^="https://bsky.app/profile/"] { /* Bluesky */
+        outline: 3px solid #1185fe;
+      }
+
+      &[href^="https://www.ebay.com/usr/"] { /* Ebay */
+        animation: 3s linear infinite alternate ebay;
+      }
+
+      &[href^="https://github.com/"] { /* GitHub */
+        outline: 3px solid #FFFFFF;
+        @container style(--theme-is:light) { outline: 3px solid #000000; }
+      }
+
+      &[href^="https://www.instagram.com/"] {/* Instagram */
+        animation: 3s linear infinite alternate instagram;
+      }
+
+      &[href^="https://mastodon."] { /* Mastodon */
+        animation: 3s linear infinite alternate mastodon;
+      }
+
+      &[href^="https://www.reddit.com/u/"] { /* Reddit */
+        outline: 3px solid #FF5700;
+      }
+
+      &[href^="https://roblox.com/users/"] { /* Roblox */
+        outline: 3px solid #FFFFFF;
+        @container style(--theme-is:light) { outline: 3px solid #000000; }
+      }
+
+      &[href^="skype:"] { /* Skype */
+        outline: 3px solid #00AFF0;
+      }
+
+      &[href^="https://open.spotify.com/user/"] { /* Spotify */
+        outline: 3px solid #1db954;
+      }
+
+      &[href^="https://steamcommunity.com/profiles/"] { /* Steam */
+        animation: 3s linear infinite alternate steam;
+      }
+
+      &[href^="https://www.tiktok.com/@"] { /* TikTok */
+        animation: 3s linear infinite alternate tiktok;
+      }
+
+      &[href^="https://www.twitch.tv/"] { /* Twitch */
+        outline: 3px solid #9146ff; 
+      }
+
+      &[href^="https://x.com/"] {
+        outline: 3px solid #FFFFFF;
+        @container style(--theme-is:light) { outline: 3px solid #000000; }
+        @container style(--replace-x:true) { outline: 3px solid #1DA1F2; }
+      }
+
+      &[href^="https://www.youtube.com/channel/"] { /* YouTube */
+        outline: 3px solid #ff0000;
+      }
     }
 
-    &[href^="https://www.ebay.com/usr/"] { /* Ebay */
-      animation: 3s linear infinite alternate ebay;
-    }
+    > .connectedAccountIcon_e6abe8 { /* connections w/o links */
+      & ~ .connectedAccountNameContainer_e6abe8::before {
+        content: ""; 
+        position: absolute; top: 0; left: 0; 
+        width: 100%; height: 100%; 
+        border-radius: 8px;
+        pointer-events: none;
+      }
 
-    &[href^="https://github.com/"] { /* GitHub */
-      outline: 3px solid #FFFFFF;
-      @container style(--theme-is:light) { outline: 3px solid #000000; }
-    }
+      &[aria-label="Amazon Music"] ~ .connectedAccountNameContainer_e6abe8::before { /* Amazon Music */
+        outline: 3px solid #46C3d0;
+      }
 
-    &[href^="https://www.instagram.com/"] {/* Instagram */
-      animation: 3s linear infinite alternate instagram;
-    }
+      &[aria-label="Battle.net"] ~ .connectedAccountNameContainer_e6abe8::before { /* Battle.net */
+        outline: 3px solid #148EFF;
+      }
 
-    &[href^="https://mastodon."] { /* Mastodon */
-      animation: 3s linear infinite alternate mastodon;
-    }
+      &[aria-label="Bungie.net"] ~ .connectedAccountNameContainer_e6abe8::before { /* Bungie.net */
+        outline: 3px solid #FFFFFF;
+        @container style(--theme-is:light) { outline: 3px solid #000000; }
+      }
+    
+      &[aria-label="Crunchyroll"] ~ .connectedAccountNameContainer_e6abe8::before { /* Crunchyroll */
+        outline: 3px solid #f78922;
+      }
 
-    &[href^="https://www.reddit.com/u/"] { /* Reddit */
-      outline: 3px solid #FF5700;
-    }
+      &[aria-label="Domain"] ~ .connectedAccountNameContainer_e6abe8::before { /* Domain */
+        outline: 3px solid #FFFFFF;
+        @container style(--theme-is:light) { outline: 3px solid #000000; }
+      }
 
-    &[href^="https://roblox.com/users/"] { /* Roblox */
-      outline: 3px solid #FFFFFF;
-      @container style(--theme-is:light) { outline: 3px solid #000000; }
-    }
+      &[aria-label="Epic Games"] ~ .connectedAccountNameContainer_e6abe8::before { /* Epic Games */
+        outline: 3px solid #FFFFFF;
+        @container style(--theme-is:light) { outline: 3px solid #2F2D2E; }
+      }
 
-    &[href^="skype:"] { /* Skype */
-      outline: 3px solid #00AFF0;
-    }
+      &[aria-label="Facebook"] ~ .connectedAccountNameContainer_e6abe8::before { /* Facebook */
+        outline: 3px solid #1877F2;
+      }
 
-    &[href^="https://open.spotify.com/user/"] { /* Spotify */
-      outline: 3px solid #1db954;
-    }
+      &[aria-label="League of Legends"] ~ .connectedAccountNameContainer_e6abe8::before { /* League of Legends */
+        outline: 3px solid #C79B3B;
+      }
 
-    &[href^="https://steamcommunity.com/profiles/"] { /* Steam */
-      animation: 3s linear infinite alternate steam;
-    }
+      &[aria-label="PayPal"] ~ .connectedAccountNameContainer_e6abe8::before { /* PayPal */
+        outline: 3px solid #00457C;
+      }
 
-    &[href^="https://www.tiktok.com/@"] { /* TikTok */
-      animation: 3s linear infinite alternate tiktok;
-    }
+      &[aria-label="PlayStation Network"] ~ .connectedAccountNameContainer_e6abe8::before { /* PlayStation Network*/
+        outline: 3px solid #2e6db4;
+      }
 
-    &[href^="https://www.twitch.tv/"] { /* Twitch */
-      outline: 3px solid #9146ff; 
-    }
+      &[aria-label="Riot Games"] ~ .connectedAccountNameContainer_e6abe8::before { /* Riot Games */
+        outline: 3px solid #FC0D00;
+      }
 
-    &[href^="https://x.com/"] {
-      outline: 3px solid #FFFFFF;
-      @container style(--theme-is:light) { outline: 3px solid #000000; }
-      @container style(--replace-x:true) { outline: 3px solid #1DA1F2; }
-    }
-
-    &[href^="https://www.youtube.com/channel/"] { /* YouTube */
-      outline: 3px solid #ff0000;
+      &[aria-label="Xbox"] ~ .connectedAccountNameContainer_e6abe8::before { /* Xbox */
+        outline: 3px solid #107c10;
+      }
     }
   }
-
-  > .connectedAccountIcon_e6abe8 { /* connections w/o links */
-    & ~ .connectedAccountNameContainer_e6abe8::before {
-      content: ""; 
-      position: absolute; top: 0; left: 0; 
-      width: 100%; height: 100%; 
-      border-radius: 8px;
-      pointer-events: none;
-    }
-
-    &[aria-label="Amazon Music"] ~ .connectedAccountNameContainer_e6abe8::before { /* Amazon Music */
-      outline: 3px solid #46C3d0;
-    }
-
-    &[aria-label="Battle.net"] ~ .connectedAccountNameContainer_e6abe8::before { /* Battle.net */
-      outline: 3px solid #148EFF;
-    }
-
-    &[aria-label="Bungie.net"] ~ .connectedAccountNameContainer_e6abe8::before { /* Bungie.net */
-      outline: 3px solid #FFFFFF;
-      @container style(--theme-is:light) { outline: 3px solid #000000; }
-    }
-    
-    &[aria-label="Crunchyroll"] ~ .connectedAccountNameContainer_e6abe8::before { /* Crunchyroll */
-      outline: 3px solid #f78922;
-    }
-
-    &[aria-label="Domain"] ~ .connectedAccountNameContainer_e6abe8::before { /* Domain */
-      outline: 3px solid #FFFFFF;
-      @container style(--theme-is:light) { outline: 3px solid #000000; }
-    }
-
-    &[aria-label="Epic Games"] ~ .connectedAccountNameContainer_e6abe8::before { /* Epic Games */
-      outline: 3px solid #FFFFFF;
-      @container style(--theme-is:light) { outline: 3px solid #2F2D2E; }
-    }
-
-    &[aria-label="Facebook"] ~ .connectedAccountNameContainer_e6abe8::before { /* Facebook */
-      outline: 3px solid #1877F2;
-    }
-
-    &[aria-label="League of Legends"] ~ .connectedAccountNameContainer_e6abe8::before { /* League of Legends */
-      outline: 3px solid #C79B3B;
-    }
-
-    &[aria-label="PayPal"] ~ .connectedAccountNameContainer_e6abe8::before { /* PayPal */
-      outline: 3px solid #00457C;
-    }
-
-    &[aria-label="PlayStation Network"] ~ .connectedAccountNameContainer_e6abe8::before { /* PlayStation Network*/
-      outline: 3px solid #2e6db4;
-    }
-
-    &[aria-label="Riot Games"] ~ .connectedAccountNameContainer_e6abe8::before { /* Riot Games */
-      outline: 3px solid #FC0D00;
-    }
-
-    &[aria-label="Xbox"] ~ .connectedAccountNameContainer_e6abe8::before { /* Xbox */
-      outline: 3px solid #107c10;
-    }
-  }
-}
 
 /* w/ shadows */
-.connectedAccountContainer_e6abe8:hover > .connectedAccount_e6abe8 { 
-  .connectedAccountName_e6abe8 > .anchor_edefb8 { /* connections w/ links */
+  @container style(--shadows:true) {
+    .connectedAccountContainer_e6abe8:hover > .connectedAccount_e6abe8 { 
+      .connectedAccountName_e6abe8 > .anchor_edefb8 { /* connections w/ links */
     
-    &[href^="https://bsky.app/profile/"] { /* Bluesky */
-      outline: 3px solid #1185fe; box-shadow: inset 0 0 5px 1px #1185fe;
-    }
+        &[href^="https://bsky.app/profile/"] { /* Bluesky */
+          outline: 3px solid #1185fe; box-shadow: inset 0 0 5px 1px #1185fe;
+        }
 
-    &[href^="https://www.ebay.com/usr/"] { /* Ebay */
-      animation: 3s linear infinite alternate ebay-shadows;
-    }
+        &[href^="https://www.ebay.com/usr/"] { /* Ebay */
+          animation: 3s linear infinite alternate ebay-shadows;
+        }
 
-    &[href^="https://github.com/"] { /* GitHub */
-      outline: 3px solid #FFFFFF; box-shadow: inset 0 0 5px 1px #FFFFFF;
-      @container style(--theme-is:light) { outline: 3px solid #000000; box-shadow: inset 0 0 5px 1px #000000; }
-    }
+        &[href^="https://github.com/"] { /* GitHub */
+          outline: 3px solid #FFFFFF; box-shadow: inset 0 0 5px 1px #FFFFFF;
+          @container style(--theme-is:light) { outline: 3px solid #000000; box-shadow: inset 0 0 5px 1px #000000; }
+        }
 
-    &[href^="https://www.instagram.com/"] {/* Instagram */
-      animation: 3s linear infinite alternate instagram-shadows;
-    }
+        &[href^="https://www.instagram.com/"] {/* Instagram */
+          animation: 3s linear infinite alternate instagram-shadows;
+        }
 
-    &[href^="https://mastodon."] { /* Mastodon */
-      animation: 3s linear infinite alternate mastodon-shadows;
-    }
+        &[href^="https://mastodon."] { /* Mastodon */
+          animation: 3s linear infinite alternate mastodon-shadows;
+        }
 
-    &[href^="https://www.reddit.com/u/"] { /* Reddit */
-      outline: 3px solid #FF5700; box-shadow: inset 0 0 5px 1px #FF5700;
-    }
+        &[href^="https://www.reddit.com/u/"] { /* Reddit */
+          outline: 3px solid #FF5700; box-shadow: inset 0 0 5px 1px #FF5700;
+        }
 
-    &[href^="https://roblox.com/users/"] { /* Roblox */
-      outline: 3px solid #FFFFFF; box-shadow: inset 0 0 5px 1px #FFFFFF;
-      @container style(--theme-is:light) { outline: 3px solid #000000; box-shadow: inset 0 0 5px 1px #000000 }
-    }
+        &[href^="https://roblox.com/users/"] { /* Roblox */
+          outline: 3px solid #FFFFFF; box-shadow: inset 0 0 5px 1px #FFFFFF;
+          @container style(--theme-is:light) { outline: 3px solid #000000; box-shadow: inset 0 0 5px 1px #000000 }
+        }
 
-    &[href^="skype:"] { /* Skype */
-      outline: 3px solid #00AFF0; box-shadow: inset 0 0 5px 1px #00AFF0;
-    }
+        &[href^="skype:"] { /* Skype */
+          outline: 3px solid #00AFF0; box-shadow: inset 0 0 5px 1px #00AFF0;
+        }
 
-    &[href^="https://open.spotify.com/user/"] { /* Spotify */
-      outline: 3px solid #1db954; box-shadow: inset 0 0 5px 1px #1db954;
-    }
+        &[href^="https://open.spotify.com/user/"] { /* Spotify */
+          outline: 3px solid #1db954; box-shadow: inset 0 0 5px 1px #1db954;
+        }
 
-    &[href^="https://steamcommunity.com/profiles/"] { /* Steam */
-      animation: 3s linear infinite alternate steam-shadows;
-    }
+        &[href^="https://steamcommunity.com/profiles/"] { /* Steam */
+          animation: 3s linear infinite alternate steam-shadows;
+        }
 
-    &[href^="https://www.tiktok.com/@"] { /* TikTok */
-      animation: 3s linear infinite alternate tiktok-shadows;
-    }
+        &[href^="https://www.tiktok.com/@"] { /* TikTok */
+          animation: 3s linear infinite alternate tiktok-shadows;
+        }
 
-    &[href^="https://www.twitch.tv/"] { /* Twitch */
-      outline: 3px solid #9146ff; box-shadow: inset 0 0 5px 1px #9146ff;
-    }
+        &[href^="https://www.twitch.tv/"] { /* Twitch */
+          outline: 3px solid #9146ff; box-shadow: inset 0 0 5px 1px #9146ff;
+        }
 
-    &[href^="https://x.com/"] {
-      outline: 3px solid #FFFFFF; box-shadow: inset 0 0 5px 1px #FFFFFF;
-      @container style(--theme-is:light) { outline: 3px solid #000000; box-shadow: inset 0 0 5px 1px #000000; }
-      @container style(--replace-x:true) { outline: 3px solid #1DA1F2; box-shadow: inset 0 0 5px 1px #1DA1F2; }
-    }
+        &[href^="https://x.com/"] {
+          outline: 3px solid #FFFFFF; box-shadow: inset 0 0 5px 1px #FFFFFF;
+          @container style(--theme-is:light) { outline: 3px solid #000000; box-shadow: inset 0 0 5px 1px #000000; }
+          @container style(--replace-x:true) { outline: 3px solid #1DA1F2; box-shadow: inset 0 0 5px 1px #1DA1F2; }
+        }
 
-    &[href^="https://www.youtube.com/channel/"] { /* YouTube */
-      outline: 3px solid #ff0000; box-shadow: inset 0 0 5px 1px #ff0000;
-    }
-  }
+        &[href^="https://www.youtube.com/channel/"] { /* YouTube */
+          outline: 3px solid #ff0000; box-shadow: inset 0 0 5px 1px #ff0000;
+        }
+      }
 
-  > .connectedAccountIcon_e6abe8 { /* connections w/o links */
-    & ~ .connectedAccountNameContainer_e6abe8::before {
-      content: ""; 
-      position: absolute; top: 0; left: 0; 
-      width: 100%; height: 100%; 
-      border-radius: 5px;
-      pointer-events: none;
-    }
+      > .connectedAccountIcon_e6abe8 { /* connections w/o links */
+        & ~ .connectedAccountNameContainer_e6abe8::before {
+          content: ""; 
+          position: absolute; top: 0; left: 0; 
+          width: 100%; height: 100%; 
+          border-radius: 5px;
+          pointer-events: none;
+        }
 
-    &[aria-label="Amazon Music"] ~ .connectedAccountNameContainer_e6abe8::before { /* Amazon Music */
-      outline: 3px solid #46C3d0; box-shadow: inset 0 0 5px 1px #46C3d0;
-    }
+        &[aria-label="Amazon Music"] ~ .connectedAccountNameContainer_e6abe8::before { /* Amazon Music */
+          outline: 3px solid #46C3d0; box-shadow: inset 0 0 5px 1px #46C3d0;
+        }
 
-    &[aria-label="Battle.net"] ~ .connectedAccountNameContainer_e6abe8::before { /* Battle.net */
-      outline: 3px solid #148EFF; box-shadow: inset 0 0 5px 1px #148EFF;
-    }
+        &[aria-label="Battle.net"] ~ .connectedAccountNameContainer_e6abe8::before { /* Battle.net */
+          outline: 3px solid #148EFF; box-shadow: inset 0 0 5px 1px #148EFF;
+        }
 
-    &[aria-label="Bungie.net"] ~ .connectedAccountNameContainer_e6abe8::before { /* Bungie.net */
-      outline: 3px solid #FFFFFF; box-shadow: inset 0 0 5px 1px #FFFFFF;
-      @container style(--theme-is:light) { outline: 3px solid #000000; box-shadow: inset 0 0 5px 1px #000000; }
-    }
+        &[aria-label="Bungie.net"] ~ .connectedAccountNameContainer_e6abe8::before { /* Bungie.net */
+          outline: 3px solid #FFFFFF; box-shadow: inset 0 0 5px 1px #FFFFFF;
+          @container style(--theme-is:light) { outline: 3px solid #000000; box-shadow: inset 0 0 5px 1px #000000; }
+        }
     
-    &[aria-label="Crunchyroll"] ~ .connectedAccountNameContainer_e6abe8::before { /* Crunchyroll */
-      outline: 3px solid #f78922; box-shadow: inset 0 0 5px 1px #f78922;
-    }
+        &[aria-label="Crunchyroll"] ~ .connectedAccountNameContainer_e6abe8::before { /* Crunchyroll */
+          outline: 3px solid #f78922; box-shadow: inset 0 0 5px 1px #f78922;
+        }
 
-    &[aria-label="Domain"] ~ .connectedAccountNameContainer_e6abe8::before { /* Domain */
-      outline: 3px solid #FFFFFF; box-shadow: inset 0 0 5px 1px #FFFFFF;
-      @container style(--theme-is:light) { outline: 3px solid #000000; box-shadow: inset 0 0 5px 1px #000000; }
-    }
+        &[aria-label="Domain"] ~ .connectedAccountNameContainer_e6abe8::before { /* Domain */
+          outline: 3px solid #FFFFFF; box-shadow: inset 0 0 5px 1px #FFFFFF;
+          @container style(--theme-is:light) { outline: 3px solid #000000; box-shadow: inset 0 0 5px 1px #000000; }
+        }
 
-    &[aria-label="Epic Games"] ~ .connectedAccountNameContainer_e6abe8::before { /* Epic Games */
-      outline: 3px solid #FFFFFF; box-shadow: inset 0 0 5px 1px #FFFFFF;
-      @container style(--theme-is:light) { outline: 3px solid #2F2D2E; box-shadow: inset 0 0 5px 1px #2F2D2E; }
-    }
+        &[aria-label="Epic Games"] ~ .connectedAccountNameContainer_e6abe8::before { /* Epic Games */
+          outline: 3px solid #FFFFFF; box-shadow: inset 0 0 5px 1px #FFFFFF;
+          @container style(--theme-is:light) { outline: 3px solid #2F2D2E; box-shadow: inset 0 0 5px 1px #2F2D2E; }
+        }
 
-    &[aria-label="Facebook"] ~ .connectedAccountNameContainer_e6abe8::before { /* Facebook */
-      outline: 3px solid #1877F2; box-shadow: inset 0 0 5px 1px #1877F2;
-    }
+        &[aria-label="Facebook"] ~ .connectedAccountNameContainer_e6abe8::before { /* Facebook */
+          outline: 3px solid #1877F2; box-shadow: inset 0 0 5px 1px #1877F2;
+        }
 
-    &[aria-label="League of Legends"] ~ .connectedAccountNameContainer_e6abe8::before { /* League of Legends */
-      outline: 3px solid #C79B3B; box-shadow: inset 0 0 5px 1px #C79B3B;
-    }
+        &[aria-label="League of Legends"] ~ .connectedAccountNameContainer_e6abe8::before { /* League of Legends */
+          outline: 3px solid #C79B3B; box-shadow: inset 0 0 5px 1px #C79B3B;
+        }
 
-    &[aria-label="PayPal"] ~ .connectedAccountNameContainer_e6abe8::before { /* PayPal */
-      outline: 3px solid #00457C; box-shadow: inset 0 0 5px 1px #00457C;
-    }
+        &[aria-label="PayPal"] ~ .connectedAccountNameContainer_e6abe8::before { /* PayPal */
+          outline: 3px solid #00457C; box-shadow: inset 0 0 5px 1px #00457C;
+        }
 
-    &[aria-label="PlayStation Network"] ~ .connectedAccountNameContainer_e6abe8::before { /* PlayStation Network*/
-      outline: 3px solid #2e6db4; box-shadow: inset 0 0 5px 1px #2e6db4;
-    }
+        &[aria-label="PlayStation Network"] ~ .connectedAccountNameContainer_e6abe8::before { /* PlayStation Network*/
+          outline: 3px solid #2e6db4; box-shadow: inset 0 0 5px 1px #2e6db4;
+        }
 
-    &[aria-label="Riot Games"] ~ .connectedAccountNameContainer_e6abe8::before { /* Riot Games */
-      outline: 3px solid #FC0D00; box-shadow: inset 0 0 5px 1px #FC0D00;
-    }
+        &[aria-label="Riot Games"] ~ .connectedAccountNameContainer_e6abe8::before { /* Riot Games */
+          outline: 3px solid #FC0D00; box-shadow: inset 0 0 5px 1px #FC0D00;
+        }
 
-    &[aria-label="Xbox"] ~ .connectedAccountNameContainer_e6abe8::before { /* Xbox */
-      outline: 3px solid #107c10; box-shadow: inset 0 0 5px 1px #107c10;
+        &[aria-label="Xbox"] ~ .connectedAccountNameContainer_e6abe8::before { /* Xbox */
+          outline: 3px solid #107c10; box-shadow: inset 0 0 5px 1px #107c10;
+        }
+      }
     }
   }
 }
