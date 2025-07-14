@@ -5,8 +5,9 @@
  * @version 2.1
 */
 
-@import url('https://raw.githubusercontent.com/Krammeth/css-snippets/refs/heads/main/PRA-StatusBar.css');
-@import url('https://raw.githubusercontent.com/Krammeth/css-snippets/refs/heads/main/PRA-RolePills.css');
+@import url('https://raw.githubusercontent.com/Krammeth/css-snippets/refs/heads/main/PopoutsRevamped/Addons/PRA-StatusBar.css');
+@import url('https://raw.githubusercontent.com/Krammeth/css-snippets/refs/heads/main/PopoutsRevamped/Addons/PRA-RolePills.css');
+@import url('https://raw.githubusercontent.com/Krammeth/css-snippets/refs/heads/main/PopoutsRevamped/Addons/PRA-Connections.css');
 
 .root__24502.root__49fc1.small__49fc1 {
   width: 800px;
