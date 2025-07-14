@@ -32,7 +32,7 @@
       }
 
       &[href^="https://www.reddit.com/u/"] { /* Reddit */
-        outline: 3px solid #FF5700;
+        outline: 3px solid #FF4500;
       }
 
       &[href^="https://roblox.com/users/"] { /* Roblox */
