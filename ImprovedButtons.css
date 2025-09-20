@@ -30,7 +30,7 @@
       & > .wrapper__2ea32 > .basicChannelRowLink__2ea32 {
         padding: 5px 10px;
       
-        > .content__65844 > .name__2ea32 {
+        & > .content__65844 > .name__2ea32 {
           display: unset;
         }
       }
@@ -63,7 +63,7 @@
       & > .wrapper__2ea32 > .basicChannelRowLink__2ea32 {
         padding: 5px 10px;
       
-        > .content__65844 > .name__2ea32 {
+        & > .content__65844 > .name__2ea32 {
           display: unset;
         }
       }
@@ -76,7 +76,7 @@
     & > .wrapper__2ea32 > .basicChannelRowLink__2ea32 {
       padding: 5px;
       
-      > .content__65844 > .name__2ea32 {
+      & > .content__65844 > .name__2ea32 {
         display: none;
       }
     }
@@ -88,7 +88,7 @@
     & > li:not([class]) > .wrapper__2ea32 > .basicChannelRowLink__2ea32 {
       padding: 5px;
       
-      > .content__65844 > .name__2ea32 {
+      & > .content__65844 > .name__2ea32 {
         display: none;
       }
     }
