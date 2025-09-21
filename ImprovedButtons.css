@@ -47,11 +47,11 @@
 
   /* fix top spacing when both boosts bar and banner are present */
   & > div[style="height: 84px;"]:not([class]) + div[style="height: 12px;"] + .containerWithMargin__0d0f9 {
-  & ~ li:not([class]),
-  & ~ div:not([class]) {
-    margin-top: 15px;
-  }
-} 
+    & ~ li:not([class]),
+    & ~ div:not([class]) {
+      margin-top: 15px;
+    }
+  } 
 
   /* boosts bar */
   & > .containerWithMargin__0d0f9 {
