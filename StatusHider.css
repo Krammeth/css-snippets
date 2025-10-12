@@ -1,37 +1,74 @@
 /**
 * @name StatusHider
 * @version 1.4
-* @description Hides one or more selected users' status
+* @description Hides one or more selected users' status, edit @ lines 9, 63 & 70
 * @author @Krammeth
 * @website https://github.com/Krammeth
 */
 
-[src*="ID"] { /* <- copy the [src*="ID"] to add more people */
-  [class^=avatarStack_] > & { 
-    [data-list-item-id^="members-"]:has(&) [class^=subText_], /* members */
-    [data-list-item-id^="private-channels-uid_"]:has(&) [class^=subText_], /* DMs */
-    [class^=peopleListItem_] [class^=userInfo_]:has(&) [class^=subtext_] { /* friends */
-      display: none; 
-    } 
-    [class^=inner_] header:has(&) { /* popouts & panel */
-      & [class^=referenceContainer_], 
-      & [class^=container_] {
-        display: none; 
-      } 
+[src*="ID"] {
+  .wrapper__44b0c>.mask__44b0c>foreignObject>.avatarStack__44b0c>&.avatar__44b0c {
+
+    /* memberlist */
+    .memberInner__5d473:has(> .avatar__91a9d &)>.content__91a9d>.subText__91a9d,
+    /* DMs list */
+    .layout__20a53:has(> .avatar__20a53 &)>.content__20a53>.subText__20a53 {
+      display: none;
     }
-    /* activities */
-    [class^=inner_]:has(&) { /* popouts & panel */
-      & [class^=body_] [class*=card_] {
+
+    /* small popout */
+    .inner_c0bea0>.header__5be3e:has(> .avatar__75742 &) {
+
+      /* custom status */
+      & .referenceContainer_ab8609 {
         display: none;
       }
     }
+
+    .inner_c0bea0:has(> .header__5be3e > .avatar__75742 &) {
+
+      /* activity section */
+      &>.body__5be3e>section[aria-labelledby^="uid_"] {
+        display: none;
+      }
+    }
+
+    /* big popout */
+    .inner_c0bea0:has(> .profile__9c3be > .profileHeader__9c3be > .avatar__75742 &)>.container__37bfc {
+
+      /* tab element */
+      >.tabListScroller__37bfc>.top_aa8da2>.tabBarItem__37bfc[data-tab-id="ACTIVITY"],
+      /* activity tab */
+      >.tabBarPanel__37bfc[id="activity-tab"] {
+        display: none;
+      }
+    }
+
     /* active now tab */
-    [class^=nowPlayingColumn_] [class^=itemCard_]:has(&) { 
-      & header div:not([class]) > div:nth-child(2), /* activity name */
-      & header [class^=headerIcon_], /* activity icon */
-      & [class^=body_] { /* channel name */
+    .itemCard__7e549:has(div:not([class]) > .headerFull__00943 &)>div:not([class]) {
+
+      /* activity name */
+      &>.headerFull__00943 div:not([class])>.text-sm\/normal_cf4812,
+      /* activity icon */
+      &>.headerFull__00943>.headerIcon__00943,
+      /* channel container */
+      &>.body__00943 {
         display: none;
       }
     }
+  }
+}
+
+/* friends list */
+[data-list-item-id$="ID"] {
+  &.peopleListItem_cc6179>.listItemContents_fc004c>.userInfo__0a06e>.text__0a06e>.subtext__0a06e {
+    display: none;
+  }
+}
+
+/* DMs right panel */
+[aria-labelledby$="ID"] {
+  aside&>.outer_c0bea0>.inner_c0bea0>.scrollerBase_d125d2>.body_b32ca4>section[aria-labelledby^="uid_"] {
+    display: none;
   }
 }
