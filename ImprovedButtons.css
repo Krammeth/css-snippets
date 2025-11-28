@@ -2,115 +2,161 @@
  * @name Improved Buttons
  * @author Krammeth
  * @description inspired by Discord's scrapped Refresh design
- * @version 1.0
+ * @version 1.1
 */
 
 /* basically rewrite the entire scroller lmao */
-.scroller__629e4 > .content__99f8c {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  justify-content: center;
+.scroller__629e4 {
+  padding-right: 0 !important;
 
-  /* fix spacing when banner is present and boosts bar is not */
-  & > div[style="height: 84px;"]:not([class]) + div[style="height: 12px;"] + li:not([class]) {
-    margin-top: 95px !important;
-  }
+  &>.content_d125d2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
 
-  /* reduce useless spacing */
-  & > div[style="height: 12px;"]:not([class]) {
-    height: 0 !important;
-    
-    /* check if there's only one button when boosts bar is not present */
-    & + li:not([class]):has(+ .sectionDivider__629e4) {
-      width: 100%;
-      margin-top: 15px;
+    /* fix spacing when banner is present and boosts bar is not */
+    &>div[style="height: 84px;"]:not([class]) + div[style="height: 12px;"] + li:not([class]) {
+      margin-top: 95px !important;
+    }
 
-      & > .wrapper__2ea32 > .basicChannelRowLink__2ea32 {
-        padding: 5px 10px;
-      
-        & > .content__65844 > .name__2ea32 {
-          display: unset;
+    /* reduce useless spacing */
+    &>div[style="height: 12px;"]:not([class]) {
+      height: 0 !important;
+
+      /* check if there's only one button when boosts bar is not present */
+      &+li:not([class]):has(+ .sectionDivider__629e4) {
+        width: 100%;
+        margin-top: 15px;
+
+        &>.wrapper__2ea32>.basicChannelRowLink__2ea32 {
+          padding: 5px 10px;
+
+          &>.content__65844>.name__2ea32 {
+            display: unset;
+          }
         }
       }
     }
-  }
 
-  /* fix top spacing when neither boosts bar nor banner are present */
-  & > div[style="height: 0px;"]:not([class]) + div[style="height: 12px;"]:not([class]) {
-    & ~ li:not([class]),
-    & ~ div:not([class]) {
-      margin-top: 15px
+    /* fix top spacing when neither boosts bar nor banner are present */
+    &>div[style="height: 0px;"]:not([class])+div[style="height: 12px;"]:not([class]) {
+
+      &~li:not([class]),
+      &~div:not([class]) {
+        margin-top: 15px
+      }
     }
-  }
 
-  /* fix top spacing when both boosts bar and banner are present */
-  & > div[style="height: 84px;"]:not([class]) + div[style="height: 12px;"] + .containerWithMargin__0d0f9 {
-    & ~ li:not([class]),
-    & ~ div:not([class]) {
-      margin-top: 15px;
+    /* fix top spacing when both boosts bar and banner are present */
+    &>div[style="height: 84px;"]:not([class])+div[style="height: 12px;"]+.containerWithMargin__0d0f9 {
+
+      &~li:not([class]),
+      &~div:not([class]) {
+        margin-top: 15px;
+      }
     }
-  } 
 
-  /* boosts bar */
-  & > .containerWithMargin__0d0f9 {
-    margin: 12px 8px 0px;
-    width: 100%;
-
-    /* check if there's only one button when boosts bar is present */
-    & + li:not([class]):has(+ .sectionDivider__629e4) {
+    /* boosts bar */
+    &>.containerWithMargin__0d0f9 {
+      margin: 12px 8px 0px;
       width: 100%;
-      margin-top: 15px;
 
-      & > .wrapper__2ea32 > .basicChannelRowLink__2ea32 {
-        padding: 5px 10px;
-      
-        & > .content__65844 > .name__2ea32 {
-          display: unset;
+      /* check if there's only one button when boosts bar is present */
+      &+li:not([class]):has(+ .sectionDivider__629e4) {
+        width: 100%;
+        margin-top: 15px;
+
+        &>.wrapper__2ea32>.basicChannelRowLink__2ea32 {
+          padding: 5px 10px;
+
+          &>.content__65844>.name__2ea32 {
+            display: unset;
+          }
         }
       }
     }
-  }
 
-  & > li:not([class]) {
-    width: fit-content;
+    &>li:not([class]) {
+      width: fit-content;
 
-    & > .wrapper__2ea32 > .basicChannelRowLink__2ea32 {
-      padding: 5px;
-      
-      & > .content__65844 > .name__2ea32 {
-        display: none;
+      &>.wrapper__2ea32 {
+        margin: 0 5px;
+
+        &>.basicChannelRowLink__2ea32 {
+          padding: 5px;
+
+          &>.content__65844>.name__2ea32 {
+            display: none;
+          }
+        }
       }
     }
-  }
 
-  & > div:not([class], div:nth-of-type(1), div:nth-of-type(2)) {
-    width: fit-content;
+    &>div:not([class], div:nth-of-type(1), div:nth-of-type(2)) {
+      width: 40px;
 
-    & > li:not([class]) > .wrapper__2ea32 > .basicChannelRowLink__2ea32 {
-      padding: 5px;
-      
-      & > .content__65844 > .name__2ea32 {
-        display: none;
+      &>li:not([class])>.wrapper__2ea32 {
+        margin: 0 5px;
+
+        &>.basicChannelRowLink__2ea32 {
+          padding: 5px;
+
+          &>.content__65844>.name__2ea32 {
+            display: none;
+          }
+        }
       }
     }
-  }
 
-  & > .sectionDivider__629e4 { /* divider */
-    width: 100%;
-    margin: 15px 15px 3px;
-  }
+    &>.sectionDivider__629e4 {
+      /* divider */
+      width: 100%;
+      margin: 15px 15px 3px;
+    }
 
-  /* reduce categories spacing */
-  & > .containerDefault__29444 {
-    padding-top: 12px;
-  }
+    /* reduce categories spacing */
+    &>.containerDefault__29444 {
+      margin: 12px 8px 0;
+      padding: 0 10px;
 
-  /* fix categories and channels */
-  & > .containerDefault__29444,
-  & > .containerDefault_c69b6d,
-  & > .container__5b40b { 
-    width: 100%;
+      &>.wrapperCommon__29444 {
+        padding: 0;
+      }
+    }
+
+    /* fix channels */
+    &>.containerDefault_c69b6d {
+      margin: 0 8px;
+
+      &>.wrapper__2ea32 {
+        margin: 0;
+
+        &>.unread__2ea32 {
+          left: -8.5px;
+        }
+      }
+
+      &>div:not([class])>.wrapper__2ea32 {
+        margin: 0;
+
+        >.unread__2ea32 {
+          left: -7px;
+        }
+      }
+    }
+
+    &>.container__5b40b {
+      margin: 0 8px 0 0;
+    }
+
+    /* fix categories and channels */
+    &>.containerDefault__29444,
+    &>.containerDefault_c69b6d,
+    &>.container__5b40b {
+      width: 100%;
+      max-width: calc(240px - 16px);
+    }
   }
 }
