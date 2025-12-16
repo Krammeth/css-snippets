@@ -6,10 +6,10 @@
 */
 
 /* basically rewrite the entire scroller lmao */
-.scroller__629e4 {
+._629e4c86564a4ee7-scroller {
   padding-right: 0 !important;
 
-  &>.content_d125d2 {
+  &>.d125d22cdfd32cfe-content {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -26,14 +26,14 @@
       height: 0 !important;
 
       /* check if there's only one button when boosts bar is not present */
-      &+li:not([class]):has(+ .sectionDivider__629e4) {
+      &+li:not([class]):has(+ ._629e4c86564a4ee7-sectionDivider) {
         width: 100%;
         margin-top: 15px;
 
-        &>.wrapper__2ea32>.basicChannelRowLink__2ea32 {
+        &>._2ea32c412048f708-wrapper>._2ea32c412048f708-basicChannelRowLink {
           padding: 5px 10px;
 
-          &>.content__65844>.name__2ea32 {
+          &>._658442d9ffa4221c-content>._2ea32c412048f708-name {
             display: unset;
           }
         }
@@ -50,7 +50,7 @@
     }
 
     /* fix top spacing when both boosts bar and banner are present */
-    &>div[style="height: 84px;"]:not([class])+div[style="height: 12px;"]+.containerWithMargin__0d0f9 {
+    &>div[style="height: 84px;"]:not([class])+div[style="height: 12px;"]+._0d0f9ddd12a3ace3-containerWithMargin {
 
       &~li:not([class]),
       &~div:not([class]) {
@@ -59,19 +59,19 @@
     }
 
     /* boosts bar */
-    &>.containerWithMargin__0d0f9 {
+    &>._0d0f9ddd12a3ace3-containerWithMargin {
       margin: 12px 8px 0px;
       width: 100%;
 
       /* check if there's only one button when boosts bar is present */
-      &+li:not([class]):has(+ .sectionDivider__629e4) {
+      &+li:not([class]):has(+ ._629e4c86564a4ee7-sectionDivider) {
         width: 100%;
         margin-top: 15px;
 
-        &>.wrapper__2ea32>.basicChannelRowLink__2ea32 {
+        &>._2ea32c412048f708-wrapper>._2ea32c412048f708-basicChannelRowLink {
           padding: 5px 10px;
 
-          &>.content__65844>.name__2ea32 {
+          &>._658442d9ffa4221c-content>._2ea32c412048f708-name {
             display: unset;
           }
         }
@@ -81,13 +81,13 @@
     &>li:not([class]) {
       width: fit-content;
 
-      &>.wrapper__2ea32 {
+      &>._2ea32c412048f708-wrapper {
         margin: 0 5px;
 
-        &>.basicChannelRowLink__2ea32 {
+        &>._2ea32c412048f708-basicChannelRowLink {
           padding: 5px;
 
-          &>.content__65844>.name__2ea32 {
+          &>._658442d9ffa4221c-content>._2ea32c412048f708-name {
             display: none;
           }
         }
@@ -97,64 +97,64 @@
     &>div:not([class], div:nth-of-type(1), div:nth-of-type(2)) {
       width: 40px;
 
-      &>li:not([class])>.wrapper__2ea32 {
+      &>li:not([class])>._2ea32c412048f708-wrapper {
         margin: 0 5px;
 
-        &>.basicChannelRowLink__2ea32 {
+        &>._2ea32c412048f708-basicChannelRowLink {
           padding: 5px;
 
-          &>.content__65844>.name__2ea32 {
+          &>._658442d9ffa4221c-content>._2ea32c412048f708-name {
             display: none;
           }
         }
       }
     }
 
-    &>.sectionDivider__629e4 {
+    &>._629e4c86564a4ee7-sectionDivider {
       /* divider */
       width: 100%;
       margin: 15px 15px 3px;
     }
 
     /* reduce categories spacing */
-    &>.containerDefault__29444 {
+    &>._29444ba32c7fbeab-containerDefault {
       margin: 12px 8px 0;
       padding: 0 10px;
 
-      &>.wrapperCommon__29444 {
+      &>._29444ba32c7fbeab-wrapperCommon {
         padding: 0;
       }
     }
 
     /* fix channels */
-    &>.containerDefault_c69b6d {
+    &>.c69b6db0641110f6-containerDefault {
       margin: 0 8px;
 
-      &>.wrapper__2ea32 {
+      &>._2ea32c412048f708-wrapper {
         margin: 0;
 
-        &>.unread__2ea32 {
+        &>._2ea32c412048f708-unread {
           left: -8.5px;
         }
       }
 
-      &>div:not([class])>.wrapper__2ea32 {
+      &>div:not([class])>._2ea32c412048f708-wrapper {
         margin: 0;
 
-        >.unread__2ea32 {
+        >._2ea32c412048f708-unread {
           left: -7px;
         }
       }
     }
 
-    &>.container__5b40b {
+    &>._5b40bdd67543ba35-container {
       margin: 0 8px 0 0;
     }
 
     /* fix categories and channels */
-    &>.containerDefault__29444,
-    &>.containerDefault_c69b6d,
-    &>.container__5b40b {
+    &>._29444ba32c7fbeab-containerDefault,
+    &>.c69b6db0641110f6-containerDefault,
+    &>._5b40bdd67543ba35-container {
       width: 100%;
       max-width: calc(240px - 16px);
     }
