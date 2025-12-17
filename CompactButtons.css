@@ -28,7 +28,7 @@
       margin: 0;
     }
     ._972a0d22c8afa7f0-channel:not(._972a0d22c8afa7f0-dm) {
-      margin: 0 4px;
+      margin: 0 4px !important;
       >._972a0d22c8afa7f0-linkButton >._972a0d22c8afa7f0-link {
         padding: 6px;
         justify-content: center;
