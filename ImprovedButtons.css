@@ -24,6 +24,7 @@
     /* reduce useless spacing */
     &>div[style="height: 12px;"]:not([class]) {
       height: 0 !important;
+      width: 100%;
 
       /* check if there's only one button when boosts bar is not present */
       &+li:not([class]):has(+ ._629e4c86564a4ee7-sectionDivider) {
