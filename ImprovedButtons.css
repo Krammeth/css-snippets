@@ -14,7 +14,13 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-content: flex-start;
-    justify-content: center;
+    justify-content: space-evenly;
+
+    /* fix spacing when banner is present and boosts bar is not */
+    &>div[style="height: 84px;"]:not([class])+div[style="height: 12px;"]+li:not([class]),
+      &>div[style="height: 84px;"]:not([class])+div[style="height: 12px;"]+li:not([class])+li:not([class]) {
+      margin-top: 15px !important;
+    }
 
     /* reduce useless spacing */
     &>div[style="height: 12px;"]:not([class]) {
@@ -22,7 +28,7 @@
       width: 100%;
 
       /* check if there's only one button when boosts bar is not present */
-      &+li:not([class]):has(+ ._629e4c86564a4ee7-sectionDivider) {
+      &+li:not([class]):has(+._629e4c86564a4ee7-sectionDivider) {
         width: 100%;
         margin-top: 15px;
 
@@ -41,7 +47,7 @@
 
       &~li:not([class]),
       &~div:not([class]) {
-        margin-top: 15px
+        margin-top: 15px !important;
       }
     }
 
@@ -60,7 +66,7 @@
       width: 100%;
 
       /* check if there's only one button when boosts bar is present */
-      &+li:not([class]):has(+ ._629e4c86564a4ee7-sectionDivider) {
+      &+li:not([class]):has(+._629e4c86564a4ee7-sectionDivider) {
         width: 100%;
         margin-top: 15px;
 
@@ -90,7 +96,9 @@
       }
     }
 
-    &>div:not([class], div:nth-of-type(1), div:nth-of-type(2)) {
+    &>div:not([class],
+      div:nth-of-type(1),
+      div:nth-of-type(2)) {
       width: 40px;
 
       &>li:not([class])>._2ea32c412048f708-wrapper {
