@@ -16,11 +16,6 @@
     align-content: flex-start;
     justify-content: center;
 
-    /* fix spacing when banner is present and boosts bar is not */
-    &>div[style="height: 84px;"]:not([class]) + div[style="height: 12px;"] + li:not([class]) {
-      margin-top: 95px !important;
-    }
-
     /* reduce useless spacing */
     &>div[style="height: 12px;"]:not([class]) {
       height: 0 !important;
