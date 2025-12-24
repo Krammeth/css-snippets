@@ -18,7 +18,7 @@
 
     /* fix spacing when banner is present and boosts bar is not */
     &>div[style="height: 84px;"]:not([class])+div[style="height: 12px;"]+li:not([class]),
-      &>div[style="height: 84px;"]:not([class])+div[style="height: 12px;"]+li:not([class])+li:not([class]) {
+    &>div[style="height: 84px;"]:not([class])+div[style="height: 12px;"]+li:not([class])+li:not([class]) {
       margin-top: 15px !important;
     }
 
@@ -97,8 +97,8 @@
     }
 
     &>div:not([class],
-      div:nth-of-type(1),
-      div:nth-of-type(2)) {
+    div:nth-of-type(1),
+    div:nth-of-type(2)) {
       width: 40px;
 
       &>li:not([class])>._2ea32c412048f708-wrapper {
