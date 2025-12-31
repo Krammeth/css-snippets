@@ -8,7 +8,7 @@
 /* basically rewrite the entire scroller lmao */
 ._629e4c86564a4ee7-scroller {
   padding-right: 0 !important;
-
+  
   &>.d125d22cdfd32cfe-content {
     display: flex;
     flex-direction: row;
@@ -17,16 +17,18 @@
     justify-content: space-evenly;
 
     /* fix spacing when banner is present and boosts bar is not */
-    &>div[style="height: 84px;"]:not([class])+div[style="height: 12px;"]+li:not([class]),
-    &>div[style="height: 84px;"]:not([class])+div[style="height: 12px;"]+li:not([class])+li:not([class]) {
-      margin-top: 15px !important;
+    &>div[style="height: 84px;"]:not([class])+div[style="height: 12px;"]:not([class]) {
+      &~li:not([class]),
+      &~div:not([class]) {
+        margin-top: 15px !important;
+      }
     }
 
     /* reduce useless spacing */
     &>div[style="height: 12px;"]:not([class]) {
       height: 0 !important;
       width: 100%;
-
+    
       /* check if there's only one button when boosts bar is not present */
       &+li:not([class]):has(+._629e4c86564a4ee7-sectionDivider) {
         width: 100%;
@@ -34,7 +36,7 @@
 
         &>._2ea32c412048f708-wrapper>._2ea32c412048f708-basicChannelRowLink {
           padding: 5px 10px;
-
+      
           &>._658442d9ffa4221c-content>._2ea32c412048f708-name {
             display: unset;
           }
@@ -44,7 +46,6 @@
 
     /* fix top spacing when neither boosts bar nor banner are present */
     &>div[style="height: 0px;"]:not([class])+div[style="height: 12px;"]:not([class]) {
-
       &~li:not([class]),
       &~div:not([class]) {
         margin-top: 15px !important;
@@ -53,7 +54,6 @@
 
     /* fix top spacing when both boosts bar and banner are present */
     &>div[style="height: 84px;"]:not([class])+div[style="height: 12px;"]+._0d0f9ddd12a3ace3-containerWithMargin {
-
       &~li:not([class]),
       &~div:not([class]) {
         margin-top: 15px;
@@ -72,7 +72,7 @@
 
         &>._2ea32c412048f708-wrapper>._2ea32c412048f708-basicChannelRowLink {
           padding: 5px 10px;
-
+      
           &>._658442d9ffa4221c-content>._2ea32c412048f708-name {
             display: unset;
           }
@@ -85,10 +85,10 @@
 
       &>._2ea32c412048f708-wrapper {
         margin: 0 5px;
-
+      
         &>._2ea32c412048f708-basicChannelRowLink {
           padding: 5px;
-
+      
           &>._658442d9ffa4221c-content>._2ea32c412048f708-name {
             display: none;
           }
@@ -96,8 +96,8 @@
       }
     }
 
-    &>div:not([class],
-    div:nth-of-type(1),
+    &>div:not([class], 
+    div:nth-of-type(1), 
     div:nth-of-type(2)) {
       width: 40px;
 
@@ -106,7 +106,7 @@
 
         &>._2ea32c412048f708-basicChannelRowLink {
           padding: 5px;
-
+      
           &>._658442d9ffa4221c-content>._2ea32c412048f708-name {
             display: none;
           }
@@ -114,8 +114,7 @@
       }
     }
 
-    &>._629e4c86564a4ee7-sectionDivider {
-      /* divider */
+    &>._629e4c86564a4ee7-sectionDivider { /* divider */
       width: 100%;
       margin: 15px 15px 3px;
     }
@@ -133,7 +132,7 @@
     /* fix channels */
     &>.c69b6db0641110f6-containerDefault {
       margin: 0 8px;
-
+    
       &>._2ea32c412048f708-wrapper {
         margin: 0;
 
@@ -158,9 +157,9 @@
     /* fix categories and channels */
     &>._29444ba32c7fbeab-containerDefault,
     &>.c69b6db0641110f6-containerDefault,
-    &>._5b40bdd67543ba35-container {
+    &>._5b40bdd67543ba35-container { 
       width: 100%;
       max-width: calc(240px - 16px);
     }
-  }
+  } 
 }
