@@ -94,6 +94,8 @@
           padding: 5px;
       
           &>._658442d9ffa4221c-content {
+            justify-content: center;
+            
             &>._2ea32c412048f708-name {
               display: none;
             }
@@ -106,7 +108,11 @@
               background-color: var(--status-danger);
             }
 
-            /* waiting for the newbadge class */
+            &>._2b1f52e43a8f1c02-textBadge {
+              position: absolute;
+              bottom: 0;
+              transform: scale(0.7);
+            }
           }
         }
       }
