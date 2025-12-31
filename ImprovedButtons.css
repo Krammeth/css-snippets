@@ -85,12 +85,28 @@
 
       &>._2ea32c412048f708-wrapper {
         margin: 0 5px;
+
+        &>._2ea32c412048f708-unread {
+          display: none;
+        }
       
         &>._2ea32c412048f708-basicChannelRowLink {
           padding: 5px;
       
-          &>._658442d9ffa4221c-content>._2ea32c412048f708-name {
-            display: none;
+          &>._658442d9ffa4221c-content {
+            &>._2ea32c412048f708-name {
+              display: none;
+            }
+
+            &>._2ea32c412048f708-numberBadge {
+              position: absolute;
+              left: 17.5px;
+              bottom: 0;
+              transform: scale(0.7);
+              background-color: var(--status-danger);
+            }
+
+            /* waiting for the newbadge class */
           }
         }
       }
