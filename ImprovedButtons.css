@@ -37,8 +37,14 @@
         &>._2ea32c412048f708-wrapper>._2ea32c412048f708-basicChannelRowLink {
           padding: 5px 10px;
       
-          &>._658442d9ffa4221c-content>._2ea32c412048f708-name {
-            display: unset;
+          &>._658442d9ffa4221c-content {
+            &>._2ea32c412048f708-name {
+              display: unset;
+            }
+            &>._2b1f52e43a8f1c02-textBadge {
+              position: unset;
+              transform: none;
+            }
           }
         }
       }
@@ -60,6 +66,23 @@
       }
     }
 
+    /* get started bar */
+    &>li:not([class]):has(>.baf5304d07bec717-progressBarContainer) {
+      width: 100%;
+
+      >.baf5304d07bec717-progressBarContainer {
+        width: 100%;
+        margin: 0 5px;
+        max-width: calc(240px - 25px);
+      }
+
+      >.baf5304d07bec717-divider {
+        width: 100%;
+        margin: 15px 15px 3px;
+        max-width: calc(240px - 25px);
+      }
+    }
+
     /* boosts bar */
     &>._0d0f9ddd12a3ace3-containerWithMargin {
       margin: 12px 8px 0px;
@@ -73,8 +96,14 @@
         &>._2ea32c412048f708-wrapper>._2ea32c412048f708-basicChannelRowLink {
           padding: 5px 10px;
       
-          &>._658442d9ffa4221c-content>._2ea32c412048f708-name {
-            display: unset;
+          &>._658442d9ffa4221c-content {
+            &>._2ea32c412048f708-name {
+              display: unset;
+            }
+            &>._2b1f52e43a8f1c02-textBadge {
+              position: unset;
+              transform: none;
+            }
           }
         }
       }
