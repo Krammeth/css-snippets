@@ -51,11 +51,13 @@
           position: absolute;
           bottom: 0;
           transform: scale(0.7);
+          background-color: var(--badge-notification-background);
         }
         >._4ed1af9a212b8f4f-newBadge {
           position: absolute;
           bottom: 0;
           transform: scale(0.7);
+          background-color: var(--badge-notification-background);
         }
       }
     }
