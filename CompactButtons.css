@@ -52,12 +52,20 @@
           bottom: 0;
           transform: scale(0.7);
           background-color: var(--badge-notification-background);
+
+          >.cf48127484dbde85-eyebrow {
+            color: var(--white);
+          }
         }
         >._4ed1af9a212b8f4f-newBadge {
           position: absolute;
           bottom: 0;
           transform: scale(0.7);
-          background-color: var(--badge-notification-background);
+          
+          >.cf48127484dbde85-eyebrow {
+            background-color: var(--badge-notification-background);
+            color: var(--white);
+          }
         }
       }
     }
