@@ -7,52 +7,52 @@
 */
 
 [src*="ID"] {
-  ._44b0c28be7879b7b-wrapper>._44b0c28be7879b7b-mask>foreignObject>._44b0c28be7879b7b-avatarStack>&._44b0c28be7879b7b-avatar {
+  .wrapper__44b0c>.mask__44b0c>foreignObject>.avatarStack__44b0c>&.avatar__44b0c {
 
     /* memberlist */
-    ._5d473ecff348c314-memberInner:has(> ._91a9d7f7e5248a56-avatar &)>._91a9d7f7e5248a56-content>._91a9d7f7e5248a56-subText,
+    .memberInner__5d473:has(> .avatar__91a9d &)>.content__91a9d>.subText__91a9d,
     /* DMs list */
-    ._20a53846fe2e8513-layout:has(> ._20a53846fe2e8513-avatar &)>._20a53846fe2e8513-content>._20a53846fe2e8513-subText {
+    .layout__20a53:has(> .avatar__20a53 &)>.content__20a53>.subText__20a53 {
       display: none;
     }
 
     /* small popout */
-    .c0bea05627c5dc35-inner>._5be3ef42f92174b2-header:has(> ._75742e4cc9019aeb-avatar &) {
+    .inner_c0bea0>.header__5be3e:has(> .avatar__75742 &) {
 
       /* custom status */
-      & .ab86098b36386ff7-referenceContainer {
+      & .referenceContainer_ab8609 {
         display: none;
       }
     }
 
-    .c0bea05627c5dc35-inner:has(> ._5be3ef42f92174b2-header > ._75742e4cc9019aeb-avatar &) {
+    .inner_c0bea0:has(> .header__5be3e > .avatar__75742 &) {
 
       /* activity section */
-      &>._5be3ef42f92174b2-body>section[aria-labelledby^="uid_"] {
+      &>.body__5be3e>section[aria-labelledby^="uid_"] {
         display: none;
       }
     }
 
     /* big popout */
-    .c0bea05627c5dc35-inner:has(> ._9c3bea41fd465666-profile > ._9c3bea41fd465666-profileHeader > ._75742e4cc9019aeb-avatar &)>._37bfcf3d457db7a9-container {
+    .inner_c0bea0:has(> .profile__9c3be > .profileHeader__9c3be > .avatar__75742 &)>.container__37bfc {
 
       /* tab element */
-      >._37bfcf3d457db7a9-tabListScroller>.aa8da23faa27393c-top>._37bfcf3d457db7a9-tabBarItem[data-tab-id="ACTIVITY"],
+      >.tabListScroller__37bfc>.top_aa8da2>.tabBarItem__37bfc[data-tab-id="ACTIVITY"],
       /* activity tab */
-      >._37bfcf3d457db7a9-tabBarPanel[id="activity-tab"] {
+      >.tabBarPanel__37bfc[id="activity-tab"] {
         display: none;
       }
     }
 
     /* active now tab */
-    ._7e549558f336cddb-itemCard:has(div:not([class]) > ._00943886e1cf89d1-headerFull &)>div:not([class]) {
+    .itemCard__7e549:has(div:not([class]) > .headerFull__00943 &)>div:not([class]) {
 
       /* activity name */
-      &>._00943886e1cf89d1-headerFull div:not([class])>.text-sm\/normal_cf4812,
+      &>.headerFull__00943 div:not([class])>.text-sm\/normal_cf4812,
       /* activity icon */
-      &>._00943886e1cf89d1-headerFull>._00943886e1cf89d1-headerIcon,
+      &>.headerFull__00943>.headerIcon__00943,
       /* channel container */
-      &>._00943886e1cf89d1-body {
+      &>.body__00943 {
         display: none;
       }
     }
@@ -61,14 +61,14 @@
 
 /* friends list */
 [data-list-item-id$="ID"] {
-  &.cc61794aab086a2e-peopleListItem>.fc004c9c041aaefa-listItemContents>._0a06ed6ea040aa1b-userInfo>._0a06ed6ea040aa1b-text>.sub_0a06ed6ea040aa1b-text {
+  &.peopleListItem_cc6179>.listItemContents_fc004c>.userInfo__0a06e>.text__0a06e>.sub_0a06ed6ea040aa1b-text {
     display: none;
   }
 }
 
 /* DMs right panel */
 [aria-labelledby$="ID"] {
-  aside&>.c0bea05627c5dc35-outer>.c0bea05627c5dc35-inner>.d125d22cdfd32cfe-scrollerBase>.b32ca49f97332e1b-body>section[aria-labelledby^="uid_"] {
+  aside&>.outer_c0bea0>.inner_c0bea0>.scrollerBase_d125d2>.body_b32ca4>section[aria-labelledby^="uid_"] {
     display: none;
   }
 }
