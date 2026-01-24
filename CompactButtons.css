@@ -53,7 +53,10 @@
           transform: scale(0.7);
           background-color: var(--badge-notification-background);
 
-          >.BadgeClockIcon__6d7da,
+          >.BadgeClockIcon__6d7da {
+            display: none;
+          }
+
           >.eyebrow_cf4812 {
             color: var(--white) !important;
           }
