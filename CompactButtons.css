@@ -53,8 +53,9 @@
           transform: scale(0.7);
           background-color: var(--badge-notification-background);
 
+          >.BadgeClockIcon__6d7da,
           >.eyebrow_cf4812 {
-            color: var(--white);
+            color: var(--white) !important;
           }
         }
         >.newBadge__4ed1a {
