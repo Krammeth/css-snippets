@@ -279,7 +279,7 @@
           margin: 0;
 
           &>.unread__2ea32 {
-            left: -8.5px;
+            left: -3%;
           }
         }
 
@@ -301,7 +301,7 @@
       &>.containerDefault_c69b6d,
       &>.container__5b40b {
         width: 100%;
-        max-width: calc(240px - 16px);
+        max-width: calc(100% - 6.5%);
       }
     }
   }
