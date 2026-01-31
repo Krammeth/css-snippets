@@ -106,6 +106,8 @@
 
         &+div[style="height: 12px;"]:not([class]),
         &+div[style="height: 8px;"]:not([class]) {
+          height: 0 !important;
+          width: 100%;
 
           &~li:not([class]),
           &~div:not([class]) {
@@ -147,6 +149,8 @@
 
         &+div[style="height: 12px;"]:not([class]),
         &+div[style="height: 8px;"]:not([class]) {
+          height: 0 !important;
+          width: 100%;
 
           &~li:not([class]),
           &~div:not([class]) {
