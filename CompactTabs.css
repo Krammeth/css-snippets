@@ -219,7 +219,8 @@
 
             /* fix categories and channels */
             &>.containerDefault__29444,
-            &>.containerDefault_c69b6d { width: stretch; }
+            &>.containerDefault_c69b6d,
+            &>.container__5b40b { width: stretch; }
         }
     }
 }
