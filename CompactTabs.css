@@ -11,76 +11,75 @@
     scrollbar-width: 0;
     scrollbar-color: transparent;
 
-    >.content_d125d2 {
+    &>.content_d125d2 {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       align-content: flex-start;
       justify-content: space-evenly;
 
-      >div:not([class]):first-child,
-      >div[role="button"],
-      >.privateChannelsHeaderContainer__99e7c,
-      >.channel__972a0.dm__972a0 {
+      &>div:not([class]):first-child,
+      &>div[role="button"],
+      &>.privateChannelsHeaderContainer__99e7c,
+      &>.channel__972a0.dm__972a0 {
         width: 100%;
-        min-width: 0;
-        /* courtesy of @moonself for the fix */
+        min-width: 0; /* courtesy of @moonself for the fix */
       }
 
-      >.friendsButtonContainer_e6b769,
-      >div:nth-of-type(3),
-      >.channel__972a0:not(.dm__972a0),
-      >.wrapper__553bf {
+      &>.friendsButtonContainer_e6b769,
+      &>div:nth-of-type(3),
+      &>.channel__972a0:not(.dm__972a0),
+      &>.wrapper__553bf {
         margin: 0;
       }
 
       .channel__972a0:not(.dm__972a0) {
         margin: 0 4px !important;
 
-        >.linkButton__972a0>.link__972a0 {
+        &>.linkButton__972a0>.link__972a0 {
           padding: 6px;
           justify-content: center;
 
-          >.avatarWithText__972a0 {
+          &>.avatarWithText__972a0 {
             padding: 0;
 
-            >.avatar__20a53 {
+            &>.avatar__20a53 {
               margin: 0;
             }
 
-            >.content__20a53 {
+            &>.content__20a53 {
               display: none;
             }
           }
 
-          >.numberBadge__2b1f5 {
+          &>.numberBadge__2b1f5 {
             position: absolute;
             left: 17.5px;
             bottom: 0;
             transform: scale(0.7);
           }
 
-          >.premiumBadge__6d7da {
+          &>.premiumBadge__6d7da {
             position: absolute;
             bottom: 0;
             transform: scale(0.7);
             background-color: var(--badge-notification-background);
 
-            >.BadgeClockIcon__6d7da {
+            &>.BadgeClockIcon__6d7da {
               display: none;
             }
 
-            >.eyebrow_cf4812 {
+            &>.eyebrow_cf4812 {
               color: var(--white) !important;
             }
           }
 
-          >.newBadge__4ed1a {
+          &>.newBadge__4ed1a {
             position: absolute;
             bottom: 0;
             transform: scale(0.7);
 
-            >.eyebrow_cf4812 {
+            &>.eyebrow_cf4812 {
               background-color: var(--badge-notification-background);
               color: var(--white);
             }
@@ -169,13 +168,13 @@
       &>li:not([class]):has(>.progressBarContainer_baf530) {
         width: 100%;
 
-        >.progressBarContainer_baf530 {
+        &>.progressBarContainer_baf530 {
           width: 100%;
           margin: 0 5px;
           max-width: calc(240px - 25px);
         }
 
-        >.divider_baf530 {
+        &>.divider_baf530 {
           width: 100%;
           margin: 15px 15px 3px;
           max-width: calc(240px - 25px);
