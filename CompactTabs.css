@@ -162,6 +162,13 @@
                             }
                         }
                     }
+
+                    &~.sectionDivider__629e4 {
+                        &+div[style="height: 8px;"]:not([class]), /* compact */
+                        &+div[style="height: 12px;"]:not([class]) { /* default & spacious */
+                            width: 100%;
+                        }
+                    }
                 }
             }
 
@@ -220,7 +227,7 @@
                 }
             }
 
-            &>div:not([class],div:nth-of-type(1),div:nth-of-type(2)) {
+            &>div:not([class]) {
 
                 &>li:not([class])>.wrapper__2ea32 {
                     margin: 0;
@@ -236,6 +243,7 @@
             }
 
             /* fix elements width */
+
             &>.containerDefault__29444, /* category */
             &>.containerDefault_c69b6d, /* channel */
             &>.container__5b40b { /* thread */
