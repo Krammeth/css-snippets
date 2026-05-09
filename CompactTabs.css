@@ -257,6 +257,32 @@
                 }
             }
 
+            /* Game Shop */
+            &>.wrapper_fce7ca {
+
+                &>li>.wrapper__2ea32 {
+                    margin: 0;
+        
+                    &>.basicChannelRowLink__2ea32 {
+                        padding: 5px;
+            
+                        &>.content__65844 {
+                            justify-content: center;
+
+                            &>.name__2ea32 {
+                                display: none;
+                            }
+
+                            &>.textBadge__2b1f5 {
+                                position: absolute;
+                                bottom: 0;
+                                transform: scale(0.7);
+                            }
+                        }
+                    }
+                }
+            }
+
             /* fix elements width */
 
             &>.containerDefault__29444, /* category */
