@@ -85,6 +85,14 @@
                         }
                     }
 
+                    &>.eyebrow_cf4812 {
+                        position: absolute;
+                        transform: scale(0.7);
+                        bottom: 0;
+                        background-color: var(--badge-notification-background);
+                        color: var(--white);
+                    }
+
                     &>.newBadge__4ed1a {
                         position: absolute;
                         bottom: 0;
