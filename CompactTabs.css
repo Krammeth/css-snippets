@@ -76,8 +76,12 @@
 
                     &>.countDown__61bcd {
                         position: absolute;
-                        bottom: 0;
+                        bottom: -1px;
                         transform: scale(0.7);
+
+                        &>.premiumPill__9f7e5 {
+                            background-color: var(--badge-notification-background);
+                        }
   
                         &>.eyebrow_cf4812 {
                             background-color: var(--badge-notification-background);
