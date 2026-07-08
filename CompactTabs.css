@@ -114,6 +114,18 @@
                             }
                         }
                     }
+
+                    /* Quests */
+                    &>.badge__553bf {
+                        position: absolute;
+                        bottom: 0;
+                        transform: scale(0.7);
+
+                        &>.eyebrow_cf4812 {
+                            background-color: var(--badge-notification-background);
+                            color: var(--white);
+                        }
+                    }
                 }
             }
         }
