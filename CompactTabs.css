@@ -161,15 +161,13 @@
                                 padding: var(--space-xxs) var(--space-xs);
                                 padding-inline: var(--space-xs) !important;
 
-                                &>.content__65844 {
-                                    &>.name__2ea32 { 
-                                        display: unset; 
-                                    }
+                                &>.name__2ea32 { 
+                                    display: unset; 
+                                }
 
-                                    &>.textBadge__2b1f5 {
-                                        position: unset;
-                                        transform: none;
-                                    }
+                                &>.textBadge__2b1f5 {
+                                    position: unset;
+                                    transform: none;
                                 }
                             }
                         }
@@ -190,15 +188,13 @@
                                     padding: var(--space-xxs) var(--space-xs);
                                     padding-inline: var(--space-xs) !important;
 
-                                    &>.content__65844 {
-                                        &>.name__2ea32 { 
-                                            display: unset; 
-                                        }
+                                    &>.name__2ea32 { 
+                                        display: unset; 
+                                    }
 
-                                        &>.textBadge__2b1f5 {
-                                            position: unset;
-                                            transform: none;
-                                        }
+                                    &>.textBadge__2b1f5 {
+                                        position: unset;
+                                        transform: none;
                                     }
                                 }
                             }
@@ -244,26 +240,22 @@
                     &>.basicChannelRowLink__2ea32 {
                         padding: 5px;
 
-                        &>.content__65844 {
-                            justify-content: center;
+                        &>.name__2ea32 {
+                            display: none; 
+                        }
 
-                            &>.name__2ea32 { 
-                                display: none; 
-                            }
+                        &>.numberBadge__2ea32 {
+                            position: absolute;
+                            left: 17.5px;
+                            bottom: 0;
+                            transform: scale(0.7);
+                            background-color: var(--status-danger);
+                        }
 
-                            &>.numberBadge__2ea32 {
-                                position: absolute;
-                                left: 17.5px;
-                                bottom: 0;
-                                transform: scale(0.7);
-                                background-color: var(--status-danger);
-                            }
-
-                            &>.textBadge__2b1f5 {
-                                position: absolute;
-                                bottom: 0;
-                                transform: scale(0.7);
-                            }
+                        &>.textBadge__2b1f5 {
+                            position: absolute;
+                            bottom: 0;
+                            transform: scale(0.7);
                         }
                     }
                 }
@@ -277,7 +269,7 @@
                     &>.basicChannelRowLink__2ea32 {
                         padding: 5px;
 
-                        &>.content__65844>.name__2ea32 { 
+                        &>.name__2ea32 { 
                             display: none; 
                         }
                     }
@@ -293,19 +285,16 @@
                     &>.basicChannelRowLink__2ea32 {
                         padding: 5px;
             
-                        &>.content__65844 {
-                            justify-content: center;
-
-                            &>.name__2ea32 {
-                                display: none;
-                            }
-
-                            &>.textBadge__2b1f5 {
-                                position: absolute;
-                                bottom: 0;
-                                transform: scale(0.7);
-                            }
+                        &>.name__2ea32 {
+                            display: none;
                         }
+
+                        &>.textBadge__2b1f5 {
+                            position: absolute;
+                            bottom: 0;
+                            transform: scale(0.7);
+                        }
+                        
                     }
                 }
             }
