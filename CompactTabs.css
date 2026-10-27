@@ -91,7 +91,8 @@
                         }
                     }
 
-                    &>.eyebrow_cf4812 {
+                    /* NEW badge */
+                    &>.expressive_c2b88c {
                         position: absolute;
                         transform: scale(0.7);
                         bottom: 0;
