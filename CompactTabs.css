@@ -1,5 +1,5 @@
 /**
-* @name RefreshButtons
+* @name CompactTabs
 * @version 1.0
 * @description Inspired on the scrapped Visual Refresh sidebar layout
 * @author krammeth
@@ -7,11 +7,11 @@
 */
 
 @container style(--dms-tabs:true) {
-    .scroller__99e7c[data-list-id^="private-channels-uid_"] {
+    .scroller_Bce46W[data-list-id^="private-channels-uid_"] {
         scrollbar-width: 0;
         scrollbar-color: transparent;
 
-        &>.content_d125d2 {
+        &>.content_tqapBM {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -20,40 +20,40 @@
 
             &>div:not([class]):first-child,
             &>div[role="button"],
-            &>.privateChannelsHeaderContainer__99e7c,
-            &>.channel__972a0.dm__972a0 {
+            &>.privateChannelsHeaderContainer_Bce46W,
+            &>.channel_zln_tS.dm_zln_tS {
                 width: 100%;
                 min-width: 0; /* courtesy of @moonself for the fix */
             }
 
-            &>.friendsButtonContainer_e6b769,
+            &>.friendsButtonContainer_u88IQl,
             &>div:nth-of-type(3),
-            &>.channel__972a0:not(.dm__972a0),
-            &>.wrapper__553bf {
+            &>.channel_zln_tS:not(.dm_zln_tS),
+            &>.wrapper_hjotnx {
                 margin: 0;
             }
 
-            .channel__972a0:not(.dm__972a0) {
+            .channel_zln_tS:not(.dm_zln_tS) {
                 margin: 0 4px !important;
 
-                &>.linkButton__972a0>.link__972a0 {
+                &>.linkButton_zln_tS>.link_zln_tS {
                     padding: 6px;
                     justify-content: center;
 
-                    &>.avatarWithText__972a0 {
+                    &>.avatarWithText_zln_tS {
                         padding: 0;
 
-                        &>.avatar__20a53 { 
+                        &>.avatar_TBNqol { 
                             margin: 0; 
                         }
 
-                        &>.content__20a53 { 
+                        &>.content_TBNqol { 
                             display: none; 
                         }
                     }
 
                     /* Message Requests */
-                    &>.numberBadge__463b7 {
+                    &>.numberBadge_lMvXrQ {
                         position: absolute;
                         left: 17.5px;
                         bottom: 0;
@@ -61,7 +61,7 @@
                     }
 
                     /* Nitro */
-                    &>.premiumBadge__6d7da {
+                    &>.premiumBadge__83f7d {
                         position: absolute;
                         bottom: 0;
                         transform: scale(0.7);
@@ -76,12 +76,12 @@
                         }
                     }
 
-                    &>.countDown__61bcd {
+                    &>.countDown_-jNBYH {
                         position: absolute;
                         bottom: -1px;
                         transform: scale(0.7);
 
-                        &>.premiumPill__9f7e5 {
+                        &>.premiumPill_Ku7pX2 {
                             background-color: var(--badge-notification-background);
                         }
   
@@ -92,7 +92,7 @@
                     }
 
                     /* NEW badge */
-                    &>.expressive_c2b88c {
+                    &>.expressive_4guu7- {
                         position: absolute;
                         transform: scale(0.7);
                         bottom: 0;
@@ -117,7 +117,7 @@
                     }
 
                     /* Quests */
-                    &>.badge__553bf {
+                    &>.badge_hjotnx {
                         position: absolute;
                         bottom: 0;
                         transform: scale(0.7);
@@ -134,9 +134,9 @@
 }
 
 @container style(--server-tabs:true) {
-    .scroller__629e4 {
+    .scroller_ysO7Gy {
 
-        &>.content_d125d2 {
+        &>.content_tqapBM {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -152,21 +152,21 @@
                     width: 100%;
 
                     /* 1 button */
-                    &+li:not([class]):has(+.sectionDivider__629e4) {
+                    &+li:not([class]):has(+.sectionDivider_ysO7Gy) {
                         width: 100%;
 
-                        &>.wrapper__2ea32 {
+                        &>.wrapper_TNyK-N {
                             margin-inline-start: var(--space-xs) !important;
 
-                            &>.basicChannelRowLink__2ea32 {
+                            &>.basicChannelRowLink_TNyK-N {
                                 padding: var(--space-xxs) var(--space-xs);
                                 padding-inline: var(--space-xs) !important;
 
-                                &>.name__2ea32 { 
+                                &>.name_TNyK-N { 
                                     display: unset; 
                                 }
 
-                                &>.textBadge__2b1f5 {
+                                &>.textBadge__463b7 {
                                     position: unset;
                                     transform: none;
                                 }
@@ -175,25 +175,25 @@
                     }
 
                     /* boost bar */
-                    &+.container__0d0f9 {
+                    &+.container_BFMMcK {
                         width: 100%;
 
                         /* 1 button */
-                        &+li:not([class]):has(+.sectionDivider__629e4) {
+                        &+li:not([class]):has(+.sectionDivider_ysO7Gy) {
                             width: 100%;
 
-                            &>.wrapper__2ea32 {
+                            &>.wrapper_TNyK-N {
                                 margin-inline-start: var(--space-xs) !important;
 
-                                &>.basicChannelRowLink__2ea32 {
+                                &>.basicChannelRowLink_TNyK-N {
                                     padding: var(--space-xxs) var(--space-xs);
                                     padding-inline: var(--space-xs) !important;
 
-                                    &>.name__2ea32 { 
+                                    &>.name_TNyK-N { 
                                         display: unset; 
                                     }
 
-                                    &>.textBadge__2b1f5 {
+                                    &>.textBadge__463b7 {
                                         position: unset;
                                         transform: none;
                                     }
@@ -202,7 +202,7 @@
                         }
                     }
 
-                    &~.sectionDivider__629e4 {
+                    &~.sectionDivider_ysO7Gy {
                         &+div[style="height: 8px;"]:not([class]), /* compact */
                         &+div[style="height: 12px;"]:not([class]) { /* default & spacious */
                             width: 100%;
@@ -212,16 +212,16 @@
             }
 
             /* get started bar */
-            &>li:not([class]):has(>.progressBarContainer_baf530) {
+            &>li:not([class]):has(>.progressBarContainer_5nm40Y) {
                 width: 100%;
 
-                &>.progressBarContainer_baf530 {
+                &>.progressBarContainer_5nm40Y {
                     width: 100%;
                     margin: 0 5px;
                     max-width: calc(240px - 25px);
                 }
 
-                &>.divider_baf530 {
+                &>.divider_5nm40Y {
                     width: 100%;
                     margin: 15px 15px 3px;
                     max-width: calc(240px - 25px);
@@ -231,21 +231,21 @@
             &>li:not([class]) {
                 width: fit-content;
 
-                &>.wrapper__2ea32 {
+                &>.wrapper_TNyK-N {
                     margin: 0;
 
-                    &>.unread__2ea32 { 
+                    &>.unread_TNyK-N { 
                         display: none; 
                     }
 
-                    &>.basicChannelRowLink__2ea32 {
+                    &>.basicChannelRowLink_TNyK-N {
                         padding: 5px;
 
-                        &>.name__2ea32 {
+                        &>.name_TNyK-N {
                             display: none; 
                         }
 
-                        &>.numberBadge__2ea32 {
+                        &>.numberBadge_TNyK-N {
                             position: absolute;
                             left: 17.5px;
                             bottom: 0;
@@ -264,13 +264,13 @@
 
             &>div:not([class]) {
 
-                &>li:not([class])>.wrapper__2ea32 {
+                &>li:not([class])>.wrapper_TNyK-N {
                     margin: 0;
 
-                    &>.basicChannelRowLink__2ea32 {
+                    &>.basicChannelRowLink_TNyK-N {
                         padding: 5px;
 
-                        &>.name__2ea32 { 
+                        &>.name_TNyK-N { 
                             display: none; 
                         }
                     }
@@ -278,19 +278,19 @@
             }
 
             /* Game Shop */
-            &>.wrapper_fce7ca {
+            &>.wrapper_xGgKlk {
 
-                &>li>.wrapper__2ea32 {
+                &>li>.wrapper_TNyK-N {
                     margin: 0;
         
-                    &>.basicChannelRowLink__2ea32 {
+                    &>.basicChannelRowLink_TNyK-N {
                         padding: 5px;
             
-                        &>.name__2ea32 {
+                        &>.name_TNyK-N {
                             display: none;
                         }
 
-                        &>.textBadge__2b1f5 {
+                        &>.textBadge__463b7 {
                             position: absolute;
                             bottom: 0;
                             transform: scale(0.7);
@@ -302,9 +302,9 @@
 
             /* fix elements width */
 
-            &>.containerDefault__29444, /* category */
-            &>.containerDefault_c69b6d, /* channel */
-            &>.container__5b40b { /* thread */
+            &>.containerDefault_yOdhm_, /* category */
+            &>.containerDefault_Wx6SnQ, /* channel */
+            &>.container_reDhww { /* thread */
                 width: stretch; 
             }
         }
