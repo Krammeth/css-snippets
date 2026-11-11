@@ -1,10 +1,36 @@
 /**
 * @name CompactTabs
-* @version 1.0
+* @version 1.1
 * @description Inspired on the scrapped Visual Refresh sidebar layout
 * @author krammeth
 * @website https://github.com/Krammeth
 */
+
+/*
+* Every rule below is wrapped in one of two style queries:
+*
+*     @container style(--dms-tabs:true)
+*     @container style(--server-tabs:true)
+*
+* Discord stopped defining those custom properties, so both queries
+* evaluate to false and the whole snippet renders exactly like plain
+* Discord. Re-arm them here: custom properties inherit, so declaring
+* them on :root reaches the query container (the DM list sits inside
+* .sidebarList_pog62O, which Discord gives `container-type:inline-size`).
+*
+* Set --dms-tabs to false to turn the compact DM list back off.
+*
+* The server half still does nothing: the class names it targets
+* (scroller_ysO7Gy, basicChannelRowLink_TNyK-N, wrapper_TNyK-N,
+* containerDefault_*, ...) were rerolled or removed by Discord. It is
+* left untouched so upstream fixes can drop straight in; enable
+* --server-tabs once that half is updated.
+*/
+
+:root {
+    --dms-tabs: true;
+    /* --server-tabs: true; */
+}
 
 @container style(--dms-tabs:true) {
     .scroller_Bce46W[data-list-id^="private-channels-uid_"] {
