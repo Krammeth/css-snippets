@@ -101,18 +101,14 @@
                     }
 
                     /* Shop */
-                    &>.newBadge__4ed1a {
+                    &>.newBadge_SMljHk {
                         position: absolute;
                         bottom: 0;
                         transform: scale(0.7);
 
-                        &>.eyebrow_cf4812 {
+                        &>.badge_4guu7- {
                             background-color: var(--badge-notification-background);
                             color: var(--white);
-
-                            &>svg {
-                                display: none;
-                            }
                         }
                     }
 
