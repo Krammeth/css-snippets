@@ -101,7 +101,7 @@
                     }
 
                     /* Discount badge */
-                    .container_KR9zF4 {
+                    &>.container_KR9zF4 {
                         position: absolute;
                         transform: scale(0.7);
                         bottom: 0;
@@ -115,6 +115,18 @@
                         &>.card_qCN-Ri>.expressive_4guu7- {
                             background-color: unset;
                             color: unset;
+                        }
+                    }
+                    &>.premiumTrialBadge_gLFXov,
+                    &>.premiumTrialBadgeSelected_gLFXov {
+                        position: absolute;
+                        transform: scale(0.7);
+                        bottom: 0;
+                        background-color: var(--badge-notification-background);
+                        color: var(--white);
+
+                        &>svg {
+                            display: none;
                         }
                     }
 
