@@ -283,6 +283,7 @@
                             position: absolute;
                             bottom: 0;
                             transform: scale(0.7);
+                            min-width: 140%; /* fix NEW getting cropped */
                         }
                     }
                 }
